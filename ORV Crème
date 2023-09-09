@@ -605,24 +605,24 @@ li.relationships + li.freeforms:before {
   text-transform: uppercase;
 }
 
-li.blurb blockquote p:first-child::before {
-  content: "💌 ";
-  color: #8cf5b7;
-  font-size: 95%;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  font-weight: 600;
-}
+/*li.blurb blockquote p:first-child::before {
+      content: "𓍢ִ໋🌷͙֒ ";
+    color: #000;
+    font-size: 100%;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+}/*
 
 .blurb ul.series::before {
-  content: "♣️ ";
-  color: #fff;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  font-weight: 600;
+    content: "૪";
+    color: #7ca1d9;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 600;
 }
 
 .blurb h4 a:link {
   color: #000 !important;
-  border-bottom: 1px solid #525252;
+  border-bottom: 1px solid #525252 !important;
 }
 
 .blurb h4 a:link:hover, .blurb h4 a:link:visited:hover  {
@@ -682,7 +682,7 @@ dl.meta,
 
 .kudos a:before {
   color: #1a5ef0;
-  content: "\272D";
+  content: none;
   padding: 0 .25em 0 0;
 }
 
@@ -1168,12 +1168,14 @@ button,
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
-.blurb blockquote,
-#outer .current {
-  background: #cdcdcd00;
-  border-bottom: 2px solid #cdcdcd22;
-  border-radius: 0;
-  padding: 0.1em;
+.blurb blockquote, #outer .current {
+    background: #cdcdcd00;
+    border-top: 1px solid #beaea2;
+    border-bottom: 1px solid #beaea2;
+    border-radius: 0;
+    padding: 20px;
+    margin-top: 17px;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 select,
