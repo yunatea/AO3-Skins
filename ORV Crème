@@ -437,7 +437,7 @@ color: #cdcdcd22 !important;
 
 a.tag, a.tag:visited, a.tag:link {
   display: inline-block;
-  padding: 1px 5px 1px 0px;
+  padding: 1px 5px;
   margin: 1px 0px;
   border: none;
   border-top-left-radius: 10px;
@@ -445,20 +445,20 @@ a.tag, a.tag:visited, a.tag:link {
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
-.warnings a:before, .fandoms a:before {
+/*.warnings a:before, .fandoms a:before {
   color: #000;
   content: "҂";
-  padding: 0 0.5em 0 0;
-}
+  padding: 0 0.65em;
+}*/
 
 .relationships a:before, .characters a:before, .freeforms a:before, .meta a:before {
     color: #000;
-    content: "⬫";
-    padding: 0 0.25em 0 0;
+    content: "";
+    padding: 0;
 }
 
 .commas li:after {
-  content: " ";
+  content: " ⬫ ";
 }
 
 h5.fandoms.heading {
@@ -496,9 +496,18 @@ a.tag:hover {
   color: #000;
 }
 
-.tags li.warnings a.tag:hover, .listbox .heading a.tag:visited:hover {
+.heading a.tag:visited, a.tag:visited {
+  color: #000 !important;
+}
+
+
+.tags li.warnings a.tag:hover {
   color: #000 !important;
   border-bottom: 2px dotted #000 !important;
+}
+
+.listbox, .heading a.tag:hover, .heading a.tag:visited:hover, a.tag:visited:hover {
+  color: #525252 !important;
 }
 
 .tags li.relationships a.tag:hover {
@@ -533,7 +542,7 @@ li.relationships + li.freeforms {
 /*------------- TAG CATEGORIES -------------*/
 
 .blurb .fandoms::before {
-    content: "Fandom ⁎⁺˳";
+    content: "Fandom ‧₊˚";
     color: #7ca1d9;
     font-family: "Merriweather", Georgia, serif !important;
     font-weight: 600;
@@ -541,7 +550,7 @@ li.relationships + li.freeforms {
 }
 
 ul.tags li.warnings:first-child:before {
-    content: "𓍢ִ໋🌷͙֒ ";
+    content: "𓍢ִ໋🌷͙֒ :";
     color: #000;
     font-family: Avenir, Helvetica, Arial, sans-serif;
     font-weight: 600;
@@ -549,7 +558,7 @@ ul.tags li.warnings:first-child:before {
 }
 
 li.warnings + li.relationships:before {
-  content: "Relationships ⁎⁺˳";
+  content: "Relationships ‧₊˚";
   color: #bec3ea;
   font-family: "Merriweather", Georgia, serif !important;
   font-weight: 600;
@@ -557,7 +566,7 @@ li.warnings + li.relationships:before {
 }
 
 li.relationships + li.characters:before {
-  content: "Characters ⁎⁺˳";
+  content: "Characters ‧₊˚";
   color: #d7c8e9;
   font-family: "Merriweather", Georgia, serif !important;
   font-weight: 600;
@@ -565,7 +574,7 @@ li.relationships + li.characters:before {
 }
 
 li.characters + li.freeforms:before {
-  content: "Tropes ⁎⁺˳";
+  content: "Tropes ‧₊˚";
   color: #dfc3e3;
   font-family: "Merriweather", Georgia, serif !important;
   font-weight: 600;
@@ -573,7 +582,7 @@ li.characters + li.freeforms:before {
 }
 
 li.warnings + li.characters:before {
-  content: "Characters ⁎⁺˳";
+  content: "Characters ‧₊˚";
   color: #d7c8e9;
   font-family: "Merriweather", Georgia, serif !important;
   font-weight: 600;
@@ -581,7 +590,7 @@ li.warnings + li.characters:before {
 }
 
 li.warnings + li.freeforms:before {
-  content: "Tropes ⁎⁺˳";
+  content: "Tropes ‧₊˚";
   color: #dfc3e3;
   font-family: "Merriweather", Georgia, serif !important;
   font-weight: 600;
@@ -589,7 +598,7 @@ li.warnings + li.freeforms:before {
 }
 
 li.relationships + li.freeforms:before {
-  content: "Tropes ⁎⁺˳";
+  content: "Tropes ‧₊˚";
   color: #dfc3e3;
   font-family: "Merriweather", Georgia, serif !important;
   font-weight: 600;
@@ -612,7 +621,18 @@ li.blurb blockquote p:first-child::before {
 }
 
 .blurb h4 a:link {
-  color: #ffffff !important;
+  color: #000 !important;
+  border-bottom: 1px solid #525252;
+}
+
+.blurb h4 a:link:hover, .blurb h4 a:link:visited:hover  {
+  color: #525252 !important;
+  border-bottom: 1px dotted #525252;
+}
+
+.blurb h4 a:link:visited {
+  color: #525252 !important;
+  border-bottom: 1px solid #525252;
 }
 
 #workskin .notes,
@@ -778,8 +798,12 @@ li.blurb {
   border: none;
 }
 
-li.blurb,
-.listbox li.blurb {
+li.blurb, .blurb .blurb {
+  padding: 1em 1.2em;
+}
+
+li.blurb, .listbox li.blurb {
+  border: 2px dashed #BEAEA3;
   box-shadow: none !important;
   border-radius: 20px;
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -909,18 +933,14 @@ a.resp-sharing-button__link,
 .pagination.actions a:visited:hover,
 .ui-datepicker td a:visited,
 .ui-datepicker td a:visited:hover,
-a.tag:visited,
-a.tag:visited:hover,
 .action:visited:hover,
 .action a:visited:hover,
 .actions a:visited:hover,
 .listbox .heading span.action a:visited:hover,
 span.action a:visited:hover,
 span.action:hover,
-span.action:hover a:visited,
-.heading a.tag:visited,
-.heading a.tag:visited:hover {
-  color: #264b5e;
+span.action:hover a:visited {
+  color: #7ca1d9aa !important;
 }
 
 .blurb ul.required-tags li span,
