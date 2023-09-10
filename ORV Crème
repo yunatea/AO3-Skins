@@ -329,25 +329,19 @@ a:hover, a:visited:hover {
 
 /*--------------- DASHBOARD ---------------*/
 
-#dashboard, #dashboard.own {
-    margin: 0em !important;
-    background: #f2f2f200;
-    /* color: #cc996c00; */
-    box-shadow: none;
-    border-radius: 20px;
-    border-color: #cdcdcd;
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-}
-media="only screen and (max-width: 62em), handheld"
-#dashboard, #dashboard.own {
-    border-top: 3px solid #cdcdcd !important;
-    border-bottom: 3px solid #cdcdcd !important;
-    padding: 0.5em;
-    border-radius: 0.25em;
-}
-
+#dashboard,
 #dashboard.own {
-    border: 3px solid #cdcdcd;
+  margin-right: 0.1em !important;
+  background: #f2f2f2;
+  color: #cc996c;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: none;
+  border-radius: 25px;
+  border-color: #f2f2f2;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 #main.dashboard,
@@ -355,10 +349,6 @@ media="only screen and (max-width: 62em), handheld"
   margin-top: 0em;
   font-family: serif;
   border-radius: 15px 25px 50px;
-}
-
-.own, .draft, .draft .wrapper, .unread, .child, .unwrangled, .unreviewed {
-    background: #cdcdcd00 !important;
 }
 
 #dashboard ul {
@@ -388,7 +378,6 @@ fieldset, form dl, fieldset dl dl, fieldset fieldset fieldset, fieldset fieldset
 
 #inner, li.comment, #inner.wrapper {
     padding: 0 !important;
-    margin: 2% 2%;
     background-image: none !important;
     background-color: #00000000 !important;
     box-shadow: none !important;
@@ -396,15 +385,22 @@ fieldset, form dl, fieldset dl dl, fieldset fieldset fieldset, fieldset fieldset
     font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
-#main {
+#main, #main.dashboard {
+    float: none;
+    padding-left: 1% !important;
+    padding-right: 1% !important;
+    margin: 1em auto !important;
+    width: auto;
+}
+
+#main.dashboard {
     border-radius: 0px;
     box-shadow: none !important;
     font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
-#main.dashboard {
+#main.dashboard { 
     padding-left: 2em;
-    padding-right: 0;
     margin: 0.5em auto 1em 14em;
 }
 
