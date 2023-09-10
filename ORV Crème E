@@ -68,20 +68,21 @@ dl.stats dd.status::before {
 }
 
 
-/*---------- FONT ----------*/
+/* ---------- FOOTER ----------*/
 
 #footer {
   float: left;
-  border-radius: 15px;
-  background: #7b9ab0;
+  border-radius: 0px;
+  border-top: 5px dotted #beaea2 !important;
+  background: #e4e0dd;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 #footer h4 {
-  background: #beaea2;
-  color: #fff !important;
-  border-radius: 10px;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+    background: #beaea200;
+    color: #000 !important;
+    border-radius: 10px;
+    text-transform: uppercase;
 }
 
 #footer .menu {
@@ -91,6 +92,9 @@ dl.stats dd.status::before {
   padding: 5px;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
+
+
+/* ---------- FONT ----------*/
 
 .listbox .index, .dashboard .listbox .index, form .notice, form ul.notes, 
 form.verbose legend, .verbose form legend, .actions a, .actions a:link,
@@ -106,6 +110,10 @@ h1, h2, h3, h4, h5, h6, .heading {
 .system .latest h3, .system div.news h3 {
   background: #fff0 !important;
   color: #000 !important;
+}
+
+.blurb h4 a:link, .blurb h4 img {
+    color: #000 !important;
 }
 
 a, a:visited, a.link {
@@ -208,13 +216,16 @@ span.claimed, .picture .header, .bookmark .user {
 thead, tfoot, tfoot td, th, tr:hover, col.name, input, textarea,
 #modal .content, .actions a, .action, .actions input, input[type="submit"],
 button, .current, .actions label, span.unread, .replied, .listbox,
-.fieldset fieldset.listbox, span.claimed, .system .latest h3,
-.system div.news h3, .picture .header, .bookmark .user {
-    border-color: #fff0;
+.fieldset fieldset.listbox, span.claimed, .picture .header, .bookmark .user {
+    border-color: #fff0 !important;
     background: #beaea2;
     font-family: Avenir, Helvetica, Arial, sans-serif;
-    border-radius: 20px;
+    border-radius: 20px !important;
     margin-bottom: 10px;
+}
+
+.system .latest h3, .system div.news h3 {
+  border-radius: 0px !important;
 }
 
 
@@ -226,13 +237,15 @@ button, .current, .actions label, span.unread, .replied, .listbox,
   
 }
 
-#header .primary .dropdown a:focus {
-  color: #beaea2;
+#header .primary .dropdown a:focus,
+#header .open a {
+  color: #beaea2 !important;
+  background: #e4e0dd !important;
 }
 
 #header .primary .open a, 
 #header .primary .dropdown:hover a {
-  color: #525252;
+  color: #beaea2;
 }
 
 #greeting .dropdown .menu li {
@@ -262,17 +275,26 @@ button, .current, .actions label, span.unread, .replied, .listbox,
     border-radius: 20px !important;
 }
 
-#header .dropdown:hover a, #header .dropdown .menu a {
+#header .dropdown .menu a {
   border-radius: 10px !important;
 }
 
+#header .dropdown:hover a,
+  border-radius: 20px !important;
+}
+
+#header .dropdown .menu a:hover, #header .dropdown .menu a:focus {
+    color: #525252 !important;
+}
+
+
 #header .actions a:hover {
   background: #eee0 !important;
-  color: #beaea2 !important;
+  color: #525252 !important;
 }
 
 #header .dropdown:hover .menu, #header .open .menu {
-  border: 2px solid #beaea2;
+  border: 2px solid #000;
 }
 
 
@@ -413,6 +435,36 @@ form.search input[type=text] {
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
+
+element.style {
+}
+#dashboard, #dashboard.own {
+    margin-right: 0.1em !important;
+    background: #f2f2f2;
+    /* color: #cc996c; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: none;
+    border-radius: 25px;
+    border-color: #f2f2f2;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+#dashboard.own {
+    background: #f2f2f2 !important;
+    border: 0px solid #f2f2f2 !important;
+    border-radius: 20px !important;
+}
+
+#outer .current {
+    background: #cfdae300;
+    border-bottom: 0px !important;
+    border-radius: 0px !important;
+    padding: 0 0.5em 0 0 !important;
+    font-weight: 600;
+}
+
 #main.dashboard, #dashboard {
   margin-top: 1em;
   font-family: serif;
@@ -445,6 +497,10 @@ body, #main.error, #main.slow, #main.maintenance, .required .autocomplete,
 .userstuff tbody, .userstuff th, .userstuff thead td, .userstuff th a, 
 .userstuff th a:link, a.cloud3, #header .search input[type="text"] {
     color: #000;
+}
+
+.listbox .heading a:visited:hover {
+  color: #beaea2 !important;
 }
 
 .listbox, .draft, li.relationships a, .dropdown, fieldset fieldset.listbox, 
@@ -559,10 +615,10 @@ a:active, a:focus, button:focus {
   border-bottom: 2px dotted #000 !important;
 }
 
-.heading a.tag:hover, .heading a.tag:visited:hover, 
-a.tag:visited:hover {
-    color: #000 !important;
-    background: #7ca1d944 !important;
+.heading a.tag:hover, .heading a.tag:visited:hover,
+a.tag:visited:hover, a.tag:hover {
+    color: #525252 !important;
+    background: #f2f2f200 !important;
 }
 
 .tags li.relationships a.tag:hover {
@@ -597,7 +653,7 @@ li.relationships + li.freeforms {
 /*------------- TAG CATEGORIES -------------*/
 
 .blurb .fandoms::before {
-    content: "Fandom ‧₊˚";
+    content: "Fandom ‧₊◜";
     color: #7ca1d9;
     font-family: "Merriweather", Georgia, serif !important;
     font-weight: 600;
@@ -613,7 +669,7 @@ ul.tags li.warnings:first-child:before {
 }
 
 li.warnings + li.relationships:before {
-  content: "Relationships ‧₊˚";
+  content: "Relationships ‧₊◜";
   color: #bec3ea;
   font-family: "Merriweather", Georgia, serif !important;
   font-weight: 600;
@@ -621,7 +677,7 @@ li.warnings + li.relationships:before {
 }
 
 li.relationships + li.characters:before {
-  content: "Characters ‧₊˚";
+  content: "Characters ‧₊◜";
   color: #d7c8e9;
   font-family: "Merriweather", Georgia, serif !important;
   font-weight: 600;
@@ -629,7 +685,7 @@ li.relationships + li.characters:before {
 }
 
 li.characters + li.freeforms:before {
-  content: "Tropes ‧₊˚";
+  content: "Tropes ‧₊◜";
   color: #dfc3e3;
   font-family: "Merriweather", Georgia, serif !important;
   font-weight: 600;
@@ -637,7 +693,7 @@ li.characters + li.freeforms:before {
 }
 
 li.warnings + li.characters:before {
-  content: "Characters ‧₊˚";
+  content: "Characters ‧₊◜";
   color: #d7c8e9;
   font-family: "Merriweather", Georgia, serif !important;
   font-weight: 600;
@@ -645,7 +701,7 @@ li.warnings + li.characters:before {
 }
 
 li.warnings + li.freeforms:before {
-  content: "Tropes ‧₊˚";
+  content: "Tropes ‧₊◜";
   color: #dfc3e3;
   font-family: "Merriweather", Georgia, serif !important;
   font-weight: 600;
@@ -653,7 +709,7 @@ li.warnings + li.freeforms:before {
 }
 
 li.relationships + li.freeforms:before {
-  content: "Tropes ‧₊˚";
+  content: "Tropes ‧₊◜";
   color: #dfc3e3;
   font-family: "Merriweather", Georgia, serif !important;
   font-weight: 600;
@@ -880,23 +936,35 @@ option,
 }
 
 .listbox .index {
-  padding: 0.01em 1em;
+  padding: 0;
 }
 
 .listbox>.heading, .listbox .heading a:visited {
-      padding: 0.5em 0.25em 0.5em 0;
+      padding: 0.5em 0.25em 0.5em 0em;
 }
 
 
 /*---------- FANFIC LIST ----------*/
 
-li.blurb,
-.listbox li.blurb {
+li.blurb, .listbox li.blurb {
   box-shadow: none !important;
-  background: #fff4 !important;
+  background: #f2f2f2 !important;
   border-radius: 20px !important;
-  border: 2px dotted #beaea2 !important;
+  border: 2px dashed #beaea2 !important;
   font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+.blurb blockquote {
+    background: #e4e0dd00;
+    border-top: 1.5px solid #beaea2;
+    border-bottom: 1.5px solid #beaea2;
+    border-radius: 0px;
+    padding: 1em;
+    margin: 20px 0 10px 0 !important;
+}
+
+.bookmark .count a {
+  color: #fff !important;
 }
 
 #main .verbose legend,
@@ -1218,8 +1286,7 @@ form blockquote.userstuff,
   border-radius: 10xp;
 }
 
-.listbox .index,
-.dashboard .listbox .index,
+.listbox .index, .dashboard .listbox .index,
 form .notice,
 form ul.notes,
 form.verbose legend,
@@ -1232,19 +1299,11 @@ input[type="submit"],
 button,
 .current,
 .actions label {
-  border: none;
-  border-bottom: none;
+  border: 0px dashed #beaea2;
+  background: #fff0;
   background-image: none;
   box-shadow: none;
   font-family: Avenir, Helvetica, Arial, sans-serif;
-}
-
-.blurb blockquote,
-#outer .current {
-  background: #cfdae3;
-  border: 1.7px solid #beaea2;
-  border-radius: 1.5em;
-  padding: 0.5em;
 }
 
 select,
@@ -1270,6 +1329,26 @@ select:focus {
   outline: none;
 }
 
+/*---------- FILTER -----------*/
+
+.filters .submit input {
+    height: 100%;
+    margin: 1em 0;
+    min-height: 1.286em;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    white-space: normal;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+label {
+    margin-right: 0.375em;
+    font-family: "Merriweather";
+    font-size: 1.1em;
+}
+
 .filters .expander,
 .filters .expanded .expander {
   padding: 3px;
@@ -1291,9 +1370,10 @@ select:focus {
 }
 
 .filters fieldset {
-  padding: 1px;
-  border: dashed #beaea2;
-  border-radius: 25px;
+    padding: 1px;
+    border: 2px dashed #f2f2f2;
+    border-radius: 25px;
+    margin: 1em 0;
 }
 
 filters .submit input {
@@ -1647,7 +1727,7 @@ input[type="radio"]:after,
 .splash .favorite li:nth-of-type(odd) a, 
 .splash .favorite li:nth-of-type(odd) a:visited {
     color: #000 !important;
-    background: #fff4 !important;
+    background: #f2f2f2 !important;
     border-radius: 5px !important;
 }
 
@@ -1661,7 +1741,7 @@ input[type="radio"]:after,
 .splash .favorite li:nth-of-type(odd) a:hover,
 .splash .favorite li:nth-of-type(odd) a:visited:hover,
 .splash .favorite li:nth-of-type(odd) a:focus {
-    background: #fff4;
+    background: #f2f2f2;
     color: #beaea2 !important;
 }
 
@@ -1684,14 +1764,12 @@ input[type="radio"]:after,
 
 blockquote p:first-child {
     font-family: Avenir, Helvetica, Arial, sans-serif !important;
-    padding: 0.5em 0 1em 0;
+    padding: 0.5em 0;
 }
 
 p, li, dd, hr {
     margin: 1em 0;
 }
-
-
 
 .flash,
 .notice {
@@ -1706,4 +1784,16 @@ ul.notes,
   background: #fff;
   color: #6394a8;
   border-color: #fff;
+}
+
+.notice, .comment_notice, .kudos_notice, ul.notes, .caution, .error, .comment_error, .kudos_error, .alert.flash {
+    background: #f2f2f2 !important;
+    border: 1px dashed #beaea2;
+    margin: 0.75em auto;
+    padding: 0.5em 1em;
+    clear: right;
+    box-shadow: none !important;
+    border-radius: 50px;
+    color: #beaea2;
+    font-family: "Merriweather";
 }
