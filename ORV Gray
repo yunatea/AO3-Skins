@@ -644,15 +644,19 @@ input#work_search_date_to:focus {
 /*___ TAG FONT ___*/
 
 a.tag, a.tag:visited, a.tag:link {
-  line-height: 1.5;
+  line-height: 1.1;
   display: inline-block;
   padding: 0px 1.5px;
   margin: 0px 0px;
-  border: none;
+  border: none !important;
   border-radius: 10px;
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  font-size: 1em !important;
+  font-size: 0.95em !important;
   color: #000 !important;
+}
+
+a.tag:hover, a.tag:visited:hover, a.tag:link:hover, a.tag:hover, span.action:hover, span.action:hover {
+    background: #52525222 !important;
 }
 
 /*.warnings a:before, .fandoms a:before {
@@ -673,6 +677,7 @@ ul.tags li.warnings:last-child:after, ul.tags li.relationships:first-child:after
 
 .commas li:after {
   content: " ⬫ ";
+  color: #525252aa;
 }
 
 h4.viewed.heading {
@@ -702,6 +707,10 @@ h5.fandoms.heading {
   border-bottom: 0px !important;
 }
 
+/*li.warnings, li.relationships, li.characters, li.freeforms {
+    padding: 0 !important;
+}*/
+
 .tags li.warnings a.tag {
   background-color: #bec3ea00;
   border-radius: 0px !important;
@@ -709,15 +718,15 @@ h5.fandoms.heading {
 }
 
 .tags li.relationships:nth-of-type(3n+1) a.tag, .tags li.relationships:nth-of-type(3n+2) a.tag, .tags li.relationships:nth-of-type(3n+3) a.tag {
-  background-color: #bec3ea00;
+  background-color: #bec3ea00 !important;
 }
 
 .tags li.characters:nth-of-type(3n+1) a.tag, .tags li.characters:nth-of-type(3n+2) a.tag, .tags li.characters:nth-of-type(3n+3) a.tag {
-  background-color: #d7c8e300;
+  background-color: #d7c8e300 !important;
 }
 
 .tags li.freeforms:nth-of-type(3n+1) a.tag, .tags li.freeforms:nth-of-type(3n+2) a.tag ,.tags li.freeforms:nth-of-type(3n+3) a.tag {
-  background-color: #dfc3e300;
+  background-color: #dfc3e300 !important;
 }
 
 a:active, a:focus, button:focus {
@@ -775,7 +784,7 @@ ul.tags li.warnings {
   float: left !important;
   margin: 0;
   border-radius: 15px;
-  padding: 5px 2px 10px 2px !important;
+  padding: 0 !important;
 }
 
 ul.tags li.relationships,
@@ -990,6 +999,42 @@ dl.meta, li.comment {
     width: 27%;
 }
 
+dt.rating.tags, dt.warning.tags, 
+dt.category.tags, dt.fandom.tags, 
+dt.relationship.tags, dt.character.tags, 
+dt.freeform.tags, dt.language, 
+dt.AO3E.track-works-meta-notes, dt.stats {
+    text-transform: uppercase;
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    padding-top: 5px;
+    padding-bottom: 2px;
+}
+
+dt.rating.tags {
+    color: #7ca1d9;
+}
+
+dt.category.tags, dt.fandom.tags {
+    color: #bec3ea;
+}
+
+dt.relationship.tags, dt.character.tags {
+    color: #d7c8e3;
+}
+
+dt.freeform.tags, dt.language {
+    color: #dfc3e3;
+}
+
+dt.AO3E.track-works-meta-notes, dt.stats {
+    color: #e7b5d3;
+}
+
+.meta dd ul li {
+    padding: 0;
+}
+
 
 /*---------- MAIN BODY ----------*/
 
@@ -1011,7 +1056,7 @@ dl.meta, li.comment {
 
 #main, body, dl.meta, #ibox_wrapper, #ibox_content {
   border-radius: 20px;
-  background: #ddd0 !important;
+  background: #ddd0;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
@@ -1334,10 +1379,6 @@ span.action:hover a:visited,
 .heading a.tag:visited, {
   color: #525252;
   border-bottom: 1px dotted #000;
-}
-
-a.tag:hover, span.action:hover, span.action:hover {
-  color: #525252;
 }
 
 .heading a.tag:visited, a.tag:visited, 
