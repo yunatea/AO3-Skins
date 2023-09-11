@@ -256,6 +256,7 @@ img[title="Restricted"], a[href="/users/orphan_account"] img.icon,
   font-size: 1.1em !important;
   font-weight: 600;
   padding: 0em 0.75em;
+  margin-top: 20px !important;
 }
 
 .action, .action:link, .actions input, 
@@ -2231,6 +2232,11 @@ input[type="radio"]:after,
 
 /*---------- WORK ----------*/
 
+.verbose fieldset {
+    border-color: #000;
+    border-radius: 20px;
+  }
+
 #main .verbose legend {
     color: #000;
     background: #ddd !important;
@@ -2247,7 +2253,7 @@ dt.freeform, dt.title.required,
 dt.byline.coauthors, dt.summary,
 dt.notes, dt.language.required, 
 dt.backdate, dt.skin,
-dt.permissions.comments {
+dt.permissions.comments, dt.required {
     color: #000;
     font-size: 1em !important;
     font-family: Avenir, Helvetica, Arial, sans-serif !important;
@@ -2279,16 +2285,16 @@ fieldset#co-authors-options {
     border-radius: 10px !important;
 }
 
-textarea#work_summary, textarea#content {
+textarea#work_summary, textarea#content, textarea#skin_css {
     border: none !important;
     background: #f2f2f2 !important;
-    border-radius: 20px !important;
+    border-radius: 10px !important;
     padding: 15px;
     width: -webkit-fill-available;
 }
 
-textarea#content {
-    margin: 20px;
+textarea#content, textarea#skin_css {
+    margin: 0 20px 10px;
 }
 
 form dt {
@@ -2303,6 +2309,30 @@ form dd, form dd.any {
 
 fieldset.create {
     display: contents;
+}
+
+ul.options.index.group.many {
+    border: 2px solid #f2f2f2;
+}
+
+input#skin_icon {
+    border: 1px solid #525252 !important;
+    border-radius: 0px !important;
+}
+
+a.advanced_skin_open.action.hidden,
+a.advanced_skin_open.action.hidden:hover,
+a.advanced_skin_close.action.hidden,
+a.advanced_skin_close.action.hidden:hover {
+    font-size: 0.8em;
+    margin: 0 !important;
+    color: #525252 !important;
+    border: none !important;
+}
+
+a.advanced_skin_open.action.hidden:hover,
+a.advanced_skin_close.action.hidden:hover {
+    color: #bebebe !important;
 }
 
 
