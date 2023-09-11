@@ -82,7 +82,7 @@ dl.stats dd.status::before {
 #footer {
   float: left;
   border-radius: 0px;
-  border-top: 5px solid #b2b2b2 !important;
+  border-top: 5px solid #525252 !important;
   background: #f2f2f2;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
@@ -113,13 +113,13 @@ dl.stats dd.status::before {
 
 .listbox .index, .dashboard .listbox .index, form .notice, form ul.notes, 
 form.verbose legend, .verbose form legend, .actions a, .actions a:link,
-.action, .action:link, input[type="submit"], button, .current, .actions label {
-  font-family: "Merryweather", Georgia, serif !important;
+.action, .action:link, button, .current, .actions label {
+  font-family: Georgia, serif;
   color: #000 !important;
 }
 
 h1, h2, h3, h4, h5, h6, .heading {
-  font-family: "Merryweather", Georgia, serif !important;
+  font-family: Georgia, serif !important;
   font-weight: 600;
   word-wrap: break-word !important;
 }
@@ -127,6 +127,10 @@ h1, h2, h3, h4, h5, h6, .heading {
 
 h2 {
     font-size: 2em;
+}
+
+h2.collections {
+    display: none !important;
 }
 
 h3 {
@@ -198,7 +202,7 @@ img[title="Restricted"], a[href="/users/orphan_account"] img.icon,
 
 #outer.wrapper {
   background-color: #ddd !important;
-  padding-top: 1em;
+  padding-top: 0em;
   border-radius: 0px !important;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
@@ -206,7 +210,7 @@ img[title="Restricted"], a[href="/users/orphan_account"] img.icon,
 #header {
     background-color: #f2f2f2;
     border-radius: 0px;
-    border-top: 5px solid #525252;
+    border-top: 5px solid #52525200;
     border-bottom: 5px solid #525252;
     box-shadow: none !important;
 
@@ -248,10 +252,10 @@ img[title="Restricted"], a[href="/users/orphan_account"] img.icon,
 
 #header .primary a {
   color: #000 !important;
-  text-transform: uppercase !important;
+  text-transform: capitalize !important;
   font-size: 1.1em !important;
-  font-weight: 600 !important;
-  padding: 1em 0.75em;
+  font-weight: 600;
+  padding: 0em 0.75em;
 }
 
 .action, .action:link, .actions input, 
@@ -337,9 +341,12 @@ a.dropdown-toggle {
 }
 
 #header .dropdown .menu a {
-  border-radius: 0px !important;
-  color: #000 !important;
-  padding: 0.5em 0.5em;
+    border-radius: 0px !important;
+    color: #000 !important;
+    padding: 0.5em 0.5em;
+    font-family: Avenir, Helvetica, Arial, sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 0.95em !important;
 }
 
 #header .dropdown:hover a,
@@ -509,6 +516,7 @@ form.search input[type=text] {
   border-radius: 20px;
   border-color: #f2f2f2;
   font-family: Avenir, Helvetica, Arial, sans-serif;
+  padding: 0.5em 0.75em;
 }
 
 #dashboard {
@@ -519,10 +527,27 @@ form.search input[type=text] {
     background: #ddd !important;
     border: 2.5px dashed #f2f2f2 !important;
     border-radius: 20px !important;
+    text-align: justify;
 }
 
-.current {
-    border-bottom: 2px solid #000 !important;
+#dashboard a {
+    font-size: 0.95em !important;
+    font-weight: 500;
+    font-family: Georgia, serif;
+    border-radius: 0px !important;
+    border-bottom: 2px solid #0000 !important;
+    line-height: 1.5 !important;
+}
+
+#dashboard a:hover {
+    border-bottom: 2px dotted !important;
+    color: #000 !important;
+}
+
+span.current {
+    font-size: 0.95em !important;
+    font-weight: 600;
+    font-family: Georgia, serif;
 }
 
 #outer .current {
@@ -530,7 +555,12 @@ form.search input[type=text] {
     border-bottom: 0px !important;
     border-radius: 0px !important;
     padding: 0 0.5em 0 0.5em !important;
-    font-weight: 600;
+}
+
+div#dashboard {
+    background: #ddd !important;
+    border: 2.5px dashed #f2f2f2 !important;
+    border-radius: 20px !important;
 }
 
 #main.dashboard, #dashboard {
@@ -549,7 +579,7 @@ form.search input[type=text] {
   box-shadow: none;
 }
 
-table, thead td, #header #small_login, #dashboard a:hover, 
+table, thead td, #header #small_login, 
 fieldset, form dl, fieldset dl dl, fieldset fieldset fieldset, 
 fieldset fieldset dl dl, dd.hideme, form blockquote.userstuff, 
 .ui-sortable li:hover, .listbox, fieldset fieldset.listbox, 
@@ -843,7 +873,7 @@ li.relationships + li.freeforms {
 .blurb .fandoms::before {
     content: "Fandom ‧₊◜";
     color: #7ca1d9;
-    font-family: "Merriweather", Georgia, serif !important;
+    font-family: Georgia, serif !important;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -859,7 +889,7 @@ ul.tags li.warnings:first-child:before {
 li.warnings + li.relationships:before {
   content: "Relationships ‧₊◜";
   color: #bec3ea;
-  font-family: "Merriweather", Georgia, serif !important;
+  font-family: Georgia, serif !important;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -867,7 +897,7 @@ li.warnings + li.relationships:before {
 li.relationships + li.characters:before {
   content: "Characters ‧₊◜";
   color: #d7c8e9;
-  font-family: "Merriweather", Georgia, serif !important;
+  font-family: Georgia, serif !important;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -875,7 +905,7 @@ li.relationships + li.characters:before {
 li.characters + li.freeforms:before {
   content: "Tropes ‧₊◜";
   color: #dfc3e3;
-  font-family: "Merriweather", Georgia, serif !important;
+  font-family: Georgia, serif !important;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -883,7 +913,7 @@ li.characters + li.freeforms:before {
 li.warnings + li.characters:before {
   content: "Characters ‧₊◜";
   color: #d7c8e9;
-  font-family: "Merriweather", Georgia, serif !important;
+  font-family: Georgia, serif !important;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -891,7 +921,7 @@ li.warnings + li.characters:before {
 li.warnings + li.freeforms:before {
   content: "Tropes ‧₊◜";
   color: #dfc3e3;
-  font-family: "Merriweather", Georgia, serif !important;
+  font-family: Georgia, serif !important;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -899,7 +929,7 @@ li.warnings + li.freeforms:before {
 li.relationships + li.freeforms:before {
   content: "Tropes ‧₊◜";
   color: #dfc3e3;
-  font-family: "Merriweather", Georgia, serif !important;
+  font-family: Georgia, serif !important;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -1000,9 +1030,31 @@ ol.pagination, div.pagination, ol.year {
     margin-top: 5px;
 }
 
-ul.navigation.actions {
+/*ul.navigation.actions {
     font-size: 0.95em !important;
-    padding: 20px 5px 10px;
+    font-weight: 600;
+    padding: 0px 5px 20px;
+}*/
+
+li.chapter.entire, li.chapter.next, li.chapter,
+li.mark, li#show_comments_link_top li.share,
+li.subscribe, li.download {
+    font-size: 0.95em !important;
+    font-weight: 600;
+    padding: 0px 5px 20px;
+}
+
+input[type="submit"] {
+    color: #525252 !important;
+    font-size: 100% !important; 
+    font-weight: 600;
+    font-family: Georgia, serif !important;
+    background: #f2f2f2 !important;
+    cursor: pointer !important;
+}
+
+.actions * {
+    font-weight: 600;
 }
 
 
@@ -1022,37 +1074,51 @@ dl.meta, li.comment {
     width: 27%;
 }
 
+ul.commas {
+    padding-top: 5px;
+}
+
 dt.rating.tags, dt.warning.tags, 
 dt.category.tags, dt.fandom.tags, 
 dt.relationship.tags, dt.character.tags, 
 dt.freeform.tags, dt.language, 
 dt.AO3E.track-works-meta-notes, dt.stats {
     text-transform: uppercase;
-    font-family: "Merriweather", serif;
+    font-family: Georgia, serif;
     font-weight: 600;
     padding-top: 5px;
     padding-bottom: 2px;
+    font-size: 0.95em !important;
 }
 
-dt.rating.tags {
+dt.rating.tags, dt.AO3E.track-works-meta-notes, dt.language {
+    color: #000;
+}
+
+dt.stats {
+    color: #525252;
+}
+
+dt.category.tags {
     color: #7ca1d9;
 }
 
-dt.category.tags, dt.fandom.tags {
+dt.fandom.tags {
     color: #bec3ea;
 }
 
-dt.relationship.tags, dt.character.tags {
+dt.relationship.tags {
     color: #d7c8e3;
 }
 
-dt.freeform.tags {
+dt.character.tags {
     color: #dfc3e3;
 }
 
-dt.AO3E.track-works-meta-notes, dt.stats {
+dt.freeform.tags {
     color: #e7b5d3;
 }
+
 
 .meta ul li:before {
     content: " ⬫ ";
@@ -1070,6 +1136,10 @@ dt.AO3E.track-works-meta-notes, dt.stats {
     border-bottom: 1px solid #bebebe00;
 }
 
+.preface.group {
+    border: none !important;
+}
+
 div.preface {
     border: none !important;
 }
@@ -1082,16 +1152,26 @@ div.preface .notes {
     margin-top: 20px !important;
 }
 
+.end.notes.module {
+    margin: 0px !important;
+}
+
 div.preface .summary {
-    background: #52525222;
+    background: #52525200;
     border-radius: 10px !important;
     padding: 0 15px 20px;
-    border: 2.5px solid #f2f2f200;
+    border: 2.5px solid #525252;
     margin-top: 20px !important;
 }
 
+ul.actions {
+    padding-bottom: 0px;
+    padding-top: 30px;
+}
 
-
+p.kudos {
+    margin: 1em 0 2em;
+}
 
 
 /*---------- MAIN BODY ----------*/
@@ -1263,6 +1343,7 @@ span.disabled {
 
 .bookmark .actions {
     padding: 0.75em 0.75em 0;
+    font-size: 0.9em !important;
 }
 
 a#bookmark_form_trigger_for_11568582, li#add_collection_link,
@@ -1302,6 +1383,10 @@ li.blurb, .blurb .blurb {
 
 .bookmark p.status {
     margin: 0.429em;
+}
+
+p.type {
+    margin: 5px 0;
 }
 
 .bookmark .user .userstuff {
@@ -1389,14 +1474,28 @@ li.comment {
   border: 10xp dotted #c2466b;
 }
 
+.comment fieldset {
+    margin: 0;
+    padding: 15px !important;
+    border-radius: 20px;
+    border: 2.5px dashed #525252;
+    background: #f2f2f2 !important;
+}
+
 .comment fieldset textarea {
-  background-image: url("https://i.ibb.co/fvtZCSs/Subject-10.png");
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  background-size: auto 100%;
-  border-radius: 15px;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  opacity: 0.7;
+    background: #d7c8e333 !important;
+    border: 0px solid #d7c8e3;
+    border-radius: 10px !important;
+    padding: 15px;
+    margin: 20px 0 !important;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    opacity: 1;
+    width: -webkit-fill-available;
+
+/*    background: #ddd !mportant;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: auto 100%;*/
 }
 
 .error,
@@ -1662,7 +1761,6 @@ button,
   background: #fff0;
   background-image: none;
   box-shadow: none;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 select,
@@ -1720,11 +1818,13 @@ form dt {
     font-weight: 600;
     font-size: 1em;
     border-radius: 50px !important;
-    border: 2px solid #525252 !important;
+    border: 2px solid #525252 !important;  
+    background: #ddd !important
 }
 
 .filters .submit input:hover {
     border: 2px solid #bebebe !important;
+    color: #525252aa !important;
 }
 
 label {
@@ -2151,13 +2251,13 @@ input[type="radio"]:after,
 .splash .favorite li:nth-of-type(odd) a:visited:hover,
 .splash .favorite li:nth-of-type(odd) a:focus {
     background: #f2f2f2;
-    color: #525252 !important;
+    color: #525252aa !important;
 }
 
 .splash .favorite li:nth-of-type(even) a:hover,
 .splash .favorite li:nth-of-type(even) a:visited:hover,
 .splash .favorite li:nth-of-type(even) a:focus{
-    color: #525252 !important;
+    color: #525252aa !important;
 }
 
 .splash .favorite a {
