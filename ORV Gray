@@ -555,6 +555,7 @@ span.current {
     border-bottom: 0px !important;
     border-radius: 0px !important;
     padding: 0 0.5em 0 0.5em !important;
+    line-height: 1.5;
 }
 
 div#dashboard {
@@ -627,11 +628,13 @@ fieldset fieldset dl dl, dd.hideme, form blockquote.userstuff {
 select, select:focus {
     background: #f2f2f2 !important;
     color: #525252 !important;
-    font-family: "Merriweather";
+    font-family: monospace;
     font-weight: 600;
+    font-size: 0.9em !important;
     border: 0px solid #525252 !important;
     border-radius: 50px !important;
-    padding: 5px 0 5px 10px !important;
+    padding: 5px !important;
+    text-align: center;
 }
 
 input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
@@ -1086,8 +1089,8 @@ dt.AO3E.track-works-meta-notes, dt.stats {
     text-transform: uppercase;
     font-family: Georgia, serif;
     font-weight: 600;
-    padding-top: 5px;
-    padding-bottom: 2px;
+    padding-top: 1px;
+    padding-bottom: 0px;
     font-size: 0.95em !important;
 }
 
@@ -1166,7 +1169,7 @@ div.preface .summary {
 
 ul.actions {
     padding-bottom: 0px;
-    padding-top: 30px;
+    padding-top: 0px;
 }
 
 p.kudos {
@@ -1894,6 +1897,9 @@ filters .submit input {
   box-shadow: none;
 }
 
+
+/*---------- INPUT ----------*/
+
 input[type="radio"]:after,
 .filters [type="radio"]:after {
   -webkit-transition: none;
@@ -2222,6 +2228,102 @@ input[type="radio"]:after,
   transition: none;
 }
 
+
+/*---------- WORK ----------*/
+
+#main .verbose legend {
+    color: #000;
+    background: #ddd !important;
+    font-size: 1.2em !important;
+    font-family: Georgia, Serif !important;
+    font-weight: 600;
+    margin: 0.5em 1em !important;
+}
+
+dt.rating.required, dt.warning.required, 
+dt.fandom.required, dt.category,
+dt.relationship, dt.character, 
+dt.freeform, dt.title.required,
+dt.byline.coauthors, dt.summary,
+dt.notes, dt.language.required, 
+dt.backdate, dt.skin,
+dt.permissions.comments {
+    color: #000;
+    font-size: 1em !important;
+    font-family: Avenir, Helvetica, Arial, sans-serif !important;
+    font-weight: 600;
+}
+
+input[type="text" i] {
+    border-radius: 0px !important;
+    box-shadow: none;
+    border-bottom: 2px solid #000 !important;
+}
+
+input#pseud_byline_autocomplete {
+-webkit-box-shadow: 
+  0 0 0px 1000px #f2f2f2 inset !important;
+}
+
+li.input {
+    background: #ddd !important;
+}
+
+fieldset.preface {
+    margin: 0.643em !important;
+}
+
+fieldset#co-authors-options {
+    border: none !important;
+    background: #ddd !important;
+    border-radius: 10px !important;
+}
+
+textarea#work_summary, textarea#content {
+    border: none !important;
+    background: #f2f2f2 !important;
+    border-radius: 20px !important;
+    padding: 15px;
+    width: -webkit-fill-available;
+}
+
+textarea#content {
+    margin: 20px;
+}
+
+form dt {
+    border-bottom: 1px dotted #bebebe00 !important;
+}
+
+form dd, form dd.any {
+    float: left;
+    width: 72.5%;
+    margin: 0 0 1em !important;
+}
+
+fieldset.create {
+    display: contents;
+}
+
+
+/*---------- POP UP ----------*/
+
+div#modal {
+    border: 0px !important;
+    padding: 15px;
+    background: #f2f2f2;
+    border-radius: 20px;
+}
+
+#modal .footer .action.modal-closer {
+    margin: 0;
+}
+
+#modal .footer .action.modal-closer:hover {
+    border: none !important;
+}
+
+
 /*---------- HOME ----------*/
 
 /*__HEADERS in HOME SCREEN_*/
@@ -2290,12 +2392,17 @@ p, li, dd, hr {
   border-radius: 10px;
 }
 
-form .notice,
-ul.notes,
-.caution {
-  background: #fff;
-  color: #6394a8;
-  border-color: #fff;
+form .notice, ul.notes, .caution, span.html-notes {
+    background: #ddd !important;
+    color: #000;
+    border-color: #fff0;
+    padding: 0px 20px;
+    font-size: 0.9em !important;
+    font-family: monospace;
+}
+
+span.html-notes {
+    padding: 0px 10px !important;
 }
 
 .notice, .comment_notice, .kudos_notice, ul.notes, .caution, .error, .comment_error, .kudos_error, .alert.flash {
@@ -2307,7 +2414,7 @@ ul.notes,
     box-shadow: none !important;
     border-radius: 50px;
     color: #525252;
-    font-family: "Merriweather";
-    font-weight: 600;
+    font-family: monospace;
+    font-weight: 500;
 }
 
