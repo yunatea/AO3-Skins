@@ -1,12 +1,26 @@
 
 dl.stats dt {
   display: none !important;
+  margin: 20px 10px 5px !important;
+}
+
+dl.stats dd {
+  font-family: monospace !important;
+  color: #525252 !important;
+}
+
+.datetime {
+    color: #525252;
 }
 
 li.collection dl.stats dt,
 li.series dl.stats dt,
 dl.series dl.stats dt {
   display: inline-block !important;
+}
+
+dl.stats dd{
+  font-size: 1.1em;
 }
 
 dl.stats dd.kudos::before {
@@ -54,10 +68,10 @@ li.work dl.stats dd::before,
 li.bookmark dl.stats dd::before,
 dl.work dl.stats dd::before {
   display: inline-block;
-  width: 14px;
-  height: 14px;
+  width: 13px;
+  height: 13px;
   content: " ";
-  background-size: 14px 14px !important;
+  background-size: 13px 13px !important;
   margin-right: 5px;
 }
 
@@ -100,6 +114,7 @@ dl.stats dd.status::before {
 form.verbose legend, .verbose form legend, .actions a, .actions a:link,
 .action, .action:link, input[type="submit"], button, .current, .actions label {
   font-family: "Merryweather", Georgia, serif !important;
+  color: #000 !important;
 }
 
 h1, h2, h3, h4, h5, h6, .heading {
@@ -132,13 +147,13 @@ a, a:visited, a.link {
 }
 
 .blurb h4 a:link:hover, .blurb h4 a:link:visited:hover  {
-  color: #beaea2 !important;
-  border-bottom: 1px solid #beaea2 !important;
+  /*color: #bebebe !important;*/
+  border-bottom: 2px dotted !important;
 }
 
 a:hover, a.link:visited:hover, a:visited:hover {
-  color: #beaea2 !important;
-  border-bottom: 1px solid #beaea2 !important;
+  color: #525252 !important;
+  border-bottom: 2px dotted !important;
 }
 
 .blurb h4 a:link:visited, .blurb h4 img:visited {
@@ -172,20 +187,28 @@ img[title="Restricted"], a[href="/users/orphan_account"] img.icon,
 
 #outer.wrapper {
   background-color: #e4e0dd !important;
-  padding-top: 1em;
-  border-radius: none;
+  padding-top: 0em;
+  border-radius: 0px !important;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 #header {
-  background-color: #e4e0dd;
+  background-color: #ddd;
   border-radius: 0px;
-  border-bottom: 5px dotted #beaea2;
+  border-bottom: 5px dotted #525252;
   box-shadow: none !important;
 /*  background-repeat: no-repeat;
   background-position: top left;
   background-size: auto 70%; */
   font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+#header .user {
+    padding: 1em 0 0 !important;
+}
+
+#greeting p.icon {
+    padding: 1em 0.125em 0 !important;
 }
 
 #header .heading {
@@ -213,7 +236,7 @@ img[title="Restricted"], a[href="/users/orphan_account"] img.icon,
 
 .action, .action:link, .actions input, 
 input[type=submit], button, .current, .actions label {
-    color: #525252 !important;
+    color: #000 !important;
     background-image: none !important;
     background: #e4e0dd00;
 }
@@ -247,7 +270,7 @@ button, .current, .actions label, span.unread, .replied, .listbox,
 
 #header a, #header a:visited {
   color: #000;
-  font-weight: 600;
+  /*font-weight: 600;*/
   
 }
 
@@ -262,12 +285,16 @@ button, .current, .actions label, span.unread, .replied, .listbox,
   color: #beaea2;
 }
 
+a.dropdown-toggle {
+    font-weight: 500;
+}
+
 #greeting .dropdown .menu li {
   border-radius: 15px !important;
 }
 
 #header .menu li {
-  border-bottom: 1px solid #beaea4;
+  border-bottom: 1px solid #bebebe;
   border-radius: 0px !important;
 }
 
@@ -284,7 +311,7 @@ button, .current, .actions label, span.unread, .replied, .listbox,
 #header .dropdown .menu, #greeting .dropdown .menu, 
 #greeting .dropdown .menu a {
     background: #eee !important;
-    color: #beaea2 !important;
+    color: #525252 !important;
     font-family: Avenir, Helvetica, Arial, sans-serif;
     border-radius: 20px !important;
 }
@@ -305,6 +332,7 @@ button, .current, .actions label, span.unread, .replied, .listbox,
 #header .actions a:hover {
   background: #eee0 !important;
   color: #525252 !important;
+      border: 0px !important;
 }
 
 #header .dropdown:hover .menu, #header .open .menu {
@@ -334,8 +362,17 @@ form.search input[type=text] {
     outline: none;
 }
 
+.search input:focus+[role=tooltip] {
+    left: 1em;
+    right: 1em;
+    top: 4em;
+    background: #e4e0dd !important;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
 .actions a:hover, .actions input:hover, .actions a:focus, .actions input:focus, label.action:hover, .action:hover, .action:focus {
-    color: #beaea2 !important;
+    color: #525252 !important;
     border-top: none !important;
     border-left: none !important;
     box-shadow: none !important;
@@ -377,7 +414,7 @@ form.search input[type=text] {
 }
 
 #header, #inner.wrapper {
-  margin: 0em 2%;
+  margin: 0em;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
@@ -529,9 +566,9 @@ fieldset fieldset dl dl, dd.hideme, form blockquote.userstuff,
 
 .reading h4.viewed, tbody tr, thead td, #header #small_login, fieldset,
 form dl, fieldset dl dl, fieldset fieldset fieldset, fieldset fieldset dl dl, 
-dd.hideme, form blockquote.userstuff, form dt, .actions a:active, .current, 
+dd.hideme, form blockquote.userstuff, .actions a:active, .current, 
 a.current, .current a:visited, .search span.tip {
-    border-colour: #beaea2 !important;
+    border-colour: #bebebe !important;
 }
 
 fieldset, form dl, fieldset dl dl, fieldset fieldset fieldset, 
@@ -553,11 +590,33 @@ select, select:focus {
 }
 
 input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
-  -webkit-box-shadow: none !important;
+  -webkit-box-shadow: 0 0 0px 1000px #bebebe55 inset !important;
 }
 
 dd.options {
     margin: 0px;
+}
+
+input#work_search_other_tag_names_autocomplete,
+input#work_search_excluded_tag_names_autocomplete,
+input#work_search_query {
+    border-bottom: 2px solid #000 !important;
+    border-radius: 0px !important;
+    box-shadow: none !important;
+    border: 0px;
+}
+
+input#work_search_other_tag_names_autocomplete:hover,
+input#work_search_excluded_tag_names_autocomplete:hover,
+input#work_search_query:hover {
+    background: #52525222 !important;
+}
+
+input#work_search_other_tag_names_autocomplete:focus,
+input#work_search_excluded_tag_names_autocomplete:focus,
+input#work_search_query:focus {
+    background: #52525222 !important;
+    color: #525252;
 }
 
 
@@ -566,7 +625,7 @@ dd.options {
 /*___ TAG FONT ___*/
 
 a.tag, a.tag:visited, a.tag:link {
-  line-height: 1;
+  line-height: 1.5;
   display: inline-block;
   padding: 0px 1.5px;
   margin: 0px 0px;
@@ -596,6 +655,7 @@ a.tag, a.tag:visited, a.tag:link {
 h5.fandoms.heading {
     color: #000;
     font-weight: 500;
+    margin: 10px 0px 0 65px !important;
 }
 
 .favorite a.tag {
@@ -610,7 +670,7 @@ h5.fandoms.heading {
 .tags li.warnings a.tag {
   background-color: #bec3ea00;
   border-radius: 0px !important;
-  border-bottom: 2px solid #000 !important;
+  border-bottom: 2px solid #0000 !important;
 }
 
 .tags li.relationships:nth-of-type(3n+1) a.tag, .tags li.relationships:nth-of-type(3n+2) a.tag, .tags li.relationships:nth-of-type(3n+3) a.tag {
@@ -689,7 +749,7 @@ ul.tags li.freeforms {
   float: left !important;
   margin: 0;
   border-radius: 15px;
-  padding: 2px;
+  padding: 0 2px;
 }
 
 li.warnings + li.relationships,
@@ -714,7 +774,7 @@ li.relationships + li.freeforms {
 }
 
 ul.tags li.warnings:first-child:before {
-    content: "🌌 : ";
+    content: "☁️ : ";
     color: #000;
     font-family: Avenir, Helvetica, Arial, sans-serif;
     font-weight: 600;
@@ -877,7 +937,7 @@ div.userstuff ul li::before {
 
 #main, body, dl.meta, #ibox_wrapper, #ibox_content {
   border-radius: 20px;
-  background: #fff0 !important;
+  background: #ddd !important;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
@@ -1016,17 +1076,20 @@ li.blurb, .listbox li.blurb {
   box-shadow: none !important;
   background: #f2f2f2 !important;
   border-radius: 20px !important;
-  border: 2px dashed #beaea2 !important;
+  border: 2.5px dashed #525252 !important;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
+li.blurb, .blurb .blurb {
+    padding: 15px 20px;
+}
+
 .blurb blockquote {
-    background: #e4e0dd00;
-    border-top: 1.5px solid #beaea2;
-    border-bottom: 1.5px solid #beaea2;
-    border-radius: 0px;
-    padding: 1em;
-    margin: 20px 0 20px 0 !important;
+    background: #e7b5d333;
+    border: 2px solid #e7b5d3;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 20px 0 !important;
 }
 
 .bookmark .count a {
@@ -1418,6 +1481,10 @@ select:focus {
 
 /*---------- FILTER -----------*/
 
+form dt {
+    border-bottom: 1px solid #bebebe !important;
+}
+
 .filters .submit input {
     height: 100%;
     margin: 1em 0;
@@ -1433,7 +1500,7 @@ select:focus {
 }
 
 .filters .submit input:hover {
-    border: 2px solid #f2f2f2 !important;
+    border: 2px solid #bebebe !important;
 }
 
 label {
@@ -1482,8 +1549,8 @@ label {
 }
 
 .filters fieldset {
-    padding: 1px;
-    border: 2px dashed #f2f2f2;
+    padding: 6px;
+    border: 2.5px dashed #f2f2f2;
     border-radius: 20px;
     margin: 1em 0;
 }
@@ -1874,9 +1941,10 @@ input[type="radio"]:after,
 /*___ NEWS ___*/
 
 .userstuff p, .userstuff details {
-    margin: 1.286em auto;
+    margin: 0.5em auto;
     line-height: 1.5;
-    font-family: "Merriweather", serif !important;
+    font-family: Avenir, Helvetica, Arial, sans-serif !important;
+    font-size: 0.95em !important;
     padding: 0;
 }
 
