@@ -928,9 +928,9 @@ dt.AO3E.track-works-meta-notes {
 }
 
 #main {
-  border-radius: 20px;
+  border-radius: 00px;
   box-shadow: 0 0 15px #0000;
-  padding: 1.5em 2.5em 3.5em;
+  padding: 1.5em 0 3.5em 2;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
@@ -1097,6 +1097,27 @@ li.blurb, .listbox li.blurb {
     background: #beaea2;
     color: #f2f2f2;
     margin: 20px 0px 20px 0 !important;
+}
+
+/*___ NEWS ___*/
+
+blockquote p:first-child {
+    margin-top: 0 !important;
+}
+
+.userstuff p, .userstuff details {
+    margin: 0.5 auto !important;
+    line-height: 1.5;
+    font-family: "Merriweather", serif !important;
+    padding: 0;
+}
+
+blockquote p:last-child {
+    margin-top: 0 !important;
+}
+
+p, li, dd, hr {
+    margin: 1em 0;
 }
 
 /*.status .public {
@@ -1957,19 +1978,6 @@ input[type="radio"]:after,
 .splash .browse li a, .splash .favorite a {
     border-bottom: none;
     display: block;
-}
-
-/*___ NEWS ___*/
-
-.userstuff p, .userstuff details {
-    margin: 0.5 auto;
-    line-height: 1.5;
-    font-family: "Merriweather", serif !important;
-    padding: 0;
-}
-
-p, li, dd, hr {
-    margin: 1em 0;
 }
 
 .flash,
