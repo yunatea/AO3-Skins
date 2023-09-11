@@ -86,11 +86,16 @@ dl.stats dd.status::before {
 }
 
 #footer .menu {
-  background: #7b9ab0;
-  color: #fcf67e !important;
+  background: #7b9ab000;
+  color: #000 !important;
   border-radius: 20px #6A523A;
   padding: 5px;
   font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+#footer a {
+    color: #000 !important;
+    font-family: Avenir, Helvetica, Arial, sans-serif !important;
 }
 
 
@@ -105,6 +110,10 @@ form.verbose legend, .verbose form legend, .actions a, .actions a:link,
 h1, h2, h3, h4, h5, h6, .heading {
   font-family: "Merryweather", Georgia, serif !important;
   font-weight: 600;
+}
+
+h2 {
+    font-size: 2em;
 }
 
 .system .latest h3, .system div.news h3 {
@@ -209,6 +218,10 @@ img[title="Restricted"], a[href="/users/orphan_account"] img.icon,
   font-size: 1.1em !important;
   font-weight: 600 !important;
   padding: 1em 0.75em;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #e4e0dd inset !important;
 }
 
 .action, .action:link, .actions input, 
@@ -552,10 +565,6 @@ select, select:focus {
     padding: 5px 0 5px 10px !important;
 }
 
-input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
-  -webkit-box-shadow: none !important;
-}
-
 dd.options {
     margin: 0px;
 }
@@ -590,7 +599,7 @@ a.tag, a.tag:visited, a.tag:link {
 }
 
 .commas li:after {
-  content: "⬫";
+  content: " ⬫";
 }
 
 h5.fandoms.heading {
@@ -861,6 +870,43 @@ div.userstuff ul li::before {
 }
 
 
+/* ---------- READ -----------*/
+
+.wrapper {
+    box-shadow: none !important;
+    border-radius: 0px;
+}
+
+ul.work.navigation.actions {
+  padding: 0 0 20px 0 !important;
+}
+
+dl.work.meta.group {
+    background: #f2f2f2 !important;
+    box-shadow: none !important;
+    border-radius: 20px !important;
+    border: 2px dashed #beaea2;
+    padding: 20px !important;
+}
+
+.meta dt {
+    font-family: "Merriweather";
+    font-weight: 600;
+}
+
+dt.rating.tags, dt.category.tags,
+dt.fandom.tags, dt.relationship.tags,
+dt.character.tags, dt.freeform.tags, 
+dt.language, dt.stats, 
+dt.AO3E.track-works-meta-notes {
+    color: #beaea2;
+}
+
+.meta ul li {
+    padding-left: 0 !important;
+}
+
+
 /*---------- MAIN BODY ----------*/
 
 #inner, li.comment, #inner.wrapper {
@@ -910,11 +956,12 @@ fieldset fieldset.listbox {
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
-.reading h4.viewed,
-.bookmark .user {
+.reading h4.viewed, .bookmark .user {
   box-shadow: none;
-  border-radius: 20px;
+  border-radius: 0px !important;
   font-family: Avenir, Helvetica, Arial, sans-serif;
+  border-top: 3px solid #beaea2 !important;
+  padding: 13px !important;
 }
 
 body,
@@ -1012,6 +1059,11 @@ span.disabled {
 
 /*---------- FANFIC LIST ----------*/
 
+li.blurb, .blurb .blurb {
+  padding: 0.429em 0.75em 1em 0.75em;
+
+}
+
 li.blurb, .listbox li.blurb {
   box-shadow: none !important;
   background: #f2f2f2 !important;
@@ -1022,11 +1074,10 @@ li.blurb, .listbox li.blurb {
 
 .blurb blockquote {
     background: #e4e0dd00;
-    border-top: 1.5px solid #beaea2;
-    border-bottom: 1.5px solid #beaea2;
-    border-radius: 0px;
+    border: 3px solid #beaea2;
+    border-radius: 20px;
     padding: 1em;
-    margin: 20px 0 20px 0 !important;
+    margin: 20px !important;
 }
 
 .bookmark .count a {
@@ -1481,6 +1532,43 @@ label {
     padding-top: 0.643em;
 }
 
+input#work_search_query, 
+input#work_search_other_tag_names_autocomplete, 
+input#work_search_excluded_tag_names_autocomplete {
+    border-bottom: 2px solid #000 !important;
+    box-shadow: none !important;
+    border-radius: 0px !important;
+    font-size: 0.9em !important;
+}
+
+input#work_search_query:hover, 
+input#work_search_other_tag_names_autocomplete:hover, 
+input#work_search_excluded_tag_names_autocomplete:hover {
+    background: #beaea !important;
+}
+
+.autocomplete.dropdown {
+    background: #f2f2f2 !important;
+    border-radius: 20px !important;
+    border: 2px solid #000;
+}
+
+.autocomplete div.dropdown ul {
+    background: #f2f2f2 !important;
+    border: 1px solid #eee0;
+}
+
+.autocomplete .dropdown ul li {
+    background: #f2f2f2;
+    border-radius: 20px !important;
+    margin: 0px !important;
+}
+
+.autocomplete .dropdown ul li:hover, .autocomplete .dropdown li.selected {
+    background: #f2f2f2 !important;
+    color: #beaea2 !important;
+}
+
 .filters fieldset {
     padding: 1px;
     border: 2px dashed #f2f2f2;
@@ -1710,7 +1798,7 @@ input[type="radio"],
 }
 
 .filters .include input, .nomination .actions .yes+input {
-  border-color: #b0c3d1;
+  border-color: beaea2;
 }
 
 .filters .include [type="checkbox"]:checked,
@@ -1744,24 +1832,24 @@ input[type="email"]:focus,
 textarea:focus,
 .actions input[type="text"]:focus {
   outline: none;
-  border-color: #b0c3d1;
+  border-color: beaea2;
 }
 
 input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px #b0c3d1 inset !important;
+  -webkit-box-shadow: 0 0 0px 1000px beaea2 inset !important;
   -webkit-text-fill-color: #f8f8f2;
 }
 
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus {
-  box-shadow: 0 0 0px 1000px #b0c3d1 inset !important;
+  box-shadow: 0 0 0px 1000px beaea2 inset !important;
 }
 
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus {
-  -webkit-box-shadow: 0 0 0px 1000px #b0c3d1 inset !important;
+  -webkit-box-shadow: 0 0 0px 1000px beaea2 inset !important;
 }
 
 .LV_invalid_field,
@@ -1781,7 +1869,7 @@ input[type="radio"],
 .filters [type="checkbox"],
 .actions input[type="checkbox"] {
   appearance: none;
-  border: 1px solid #b0c3d1;
+  border: 1px solid beaea2;
   border-radius: 0.375em;
   cursor: pointer;
   display: inline-block;
@@ -1797,20 +1885,20 @@ input[type="radio"],
 input[type="checkbox"]:checked,
 .filters [type="checkbox"]:checked,
 .actions input[type="checkbox"]:checked {
-  background: #b0c3d1;
+  background: beaea2;
   opacity: 1;
   transition: opacity .3s, transform .6s ease;
 }
 
 .actions input[type="checkbox"]:hover {
-  border: 1px solid #b0c3d1;
+  border: 1px solid beaea2;
 }
 
 input[type="radio"],
 input[type="radio"]:after,
 .filters [type="radio"],
 .filters [type="radio"]:after {
-  border: 1px solid #b0c3d1;
+  border: 1px solid beaea2;
   border-radius: 50%;
   box-sizing: content-box;
 }
@@ -1819,7 +1907,7 @@ input[type="radio"]:after,
 .filters [type="radio"]:after {
   width: inherit;
   height: inherit;
-  background: #b0c3d1;
+  background: beaea2;
   border: 0;
   transition: none;
 }
@@ -1874,7 +1962,7 @@ input[type="radio"]:after,
 /*___ NEWS ___*/
 
 .userstuff p, .userstuff details {
-    margin: 1.286em auto;
+    margin: 0.5 auto;
     line-height: 1.5;
     font-family: "Merriweather", serif !important;
     padding: 0;
@@ -1911,3 +1999,4 @@ ul.notes,
     font-family: "Merriweather";
     font-weight: 600;
 }
+
