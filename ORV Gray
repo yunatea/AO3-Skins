@@ -521,7 +521,7 @@ form.search input[type=text] {
   border-radius: 20px;
   border-color: #f2f2f2;
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  padding: 0.5em 0.75em;
+  padding: 15px 0 /*0.5em 0.75em*/;
 }
 
 #dashboard {
@@ -529,43 +529,48 @@ form.search input[type=text] {
 }
 
 #dashboard.own {
-    background: #ddd !important;
-    border: 2.5px dashed #f2f2f2 !important;
+    background: #52525222 !important;
     border-radius: 20px !important;
     text-align: justify;
 }
 
-#dashboard a {
+#dashboard a, #dashboard span {
     font-size: 0.95em !important;
-    font-weight: 500;
-    font-family: Georgia, serif;
+    font-weight: 600;
+    font-family: monospace /*Georgia, serif*/;
     border-radius: 0px !important;
-    border-bottom: 2px solid #0000 !important;
+    border: 2px solid #0000 !important;
     line-height: 1.5 !important;
+    padding: 0.2em 0.5em 0 0.5em !important;
+}
+
+#dashboard span.current {
+    background: #ddd !important;
+    border: 2px solid #525252 !important;
 }
 
 #dashboard a:hover {
-    border-bottom: 2px dotted !important;
+    border: 2px dashed #52525200 !important;
     color: #000 !important;
+    background: #ddd !important;
 }
 
 span.current {
-    font-size: 0.95em !important;
+    font-size: 1em !important;
     font-weight: 600;
     font-family: Georgia, serif;
 }
 
 #outer .current {
-    background: #cfdae300;
-    border-bottom: 0px !important;
+    /*background: #f2f2f200 !important*/;
+    border-bottom: 2px solid #f2f2f2 !important;
     border-radius: 0px !important;
-    padding: 0 0.5em 0 0.5em !important;
-    line-height: 1.5;
+    line-height: 1.5 !important;
 }
 
 div#dashboard {
-    background: #ddd !important;
-    border: 2.5px dashed #f2f2f2 !important;
+    background: #52525222 !important;
+    border: 0px solid #f2f2f2 !important;
     border-radius: 20px !important;
 }
 
@@ -642,8 +647,8 @@ select, select:focus {
     text-align: center;
 }
 
-input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
-  -webkit-box-shadow: 0 0 0px 1000px #bebebe55 inset !important;
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="text" i]:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #52525222 inset !important;
 }
 
 dd.options {
@@ -682,7 +687,7 @@ input#work_search_date_to:focus {
 /*------------- TAGS -------------*/
 
 /*___ TAG FONT ___*/
-aac
+
 a.tag, a.tag:visited, a.tag:link {
   line-height: 1.1;
   display: inline-block;
@@ -1053,12 +1058,15 @@ li.subscribe, li.download {
 }
 
 input[type="submit"] {
-    color: #525252 !important;
-    font-size: 100% !important; 
+    color: #000 !important;
+    font-size: 100% !important;
     font-weight: 600;
     font-family: Georgia, serif !important;
-    background: #f2f2f2 !important;
+    background: #f2f2f200 !important;
     cursor: pointer !important;
+    border-radius: 0px !important;
+    border-bottom: 2px solid #f2f2f2 !important;
+    margin-bottom: 10px !important;
 }
 
 .actions * {
@@ -1091,16 +1099,16 @@ dt.category.tags, dt.fandom.tags,
 dt.relationship.tags, dt.character.tags, 
 dt.freeform.tags, dt.language, 
 dt.AO3E.track-works-meta-notes, dt.stats,
-dt.series {
-    text-transform: uppercase;
+dt.series, dt.collections {
+    text-transform: capitalize;
     font-family: Georgia, serif !important;
     font-weight: 600;
-    padding-top: 1px;
+    padding-top: 5px;
     padding-bottom: 0px;
     font-size: 0.95em !important;
 }
 
-dt.rating.tags, dt.AO3E.track-works-meta-notes, dt.language {
+dt.rating.tags, dt.collections, dt.AO3E.track-works-meta-notes, dt.language {
     color: #000;
 }
 
@@ -1299,6 +1307,10 @@ option,
     background: #f2f2f2 !important;
     color: #525252;
 
+}
+
+#feedback {
+    margin: 30px 0 auto;
 }
 
 
@@ -2278,7 +2290,7 @@ input[type="text" i] {
 
 input#pseud_byline_autocomplete {
 -webkit-box-shadow: 
-  0 0 0px 1000px #f2f2f2 inset !important;
+  0 0 0px 1000px #f2f2f200 inset !important;
 }
 
 li.input {
@@ -2304,7 +2316,8 @@ textarea#collection_collection_profile_attributes_faq,
 textarea#collection_collection_profile_attributes_intro,
 textarea#collection_collection_profile_attributes_rules,
 textarea#collection_collection_profile_attributes_assignment_notification,
-textarea#collection_collection_profile_attributes_gift_notification {
+textarea#collection_collection_profile_attributes_gift_notification,
+textarea#series_summary, textarea#series_series_notes {
     border: none !important;
     background: #f2f2f2 !important;
     border-radius: 10px !important;
