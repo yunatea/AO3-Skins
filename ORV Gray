@@ -713,6 +713,10 @@ dd.options {
     margin: 0px;
 }
 
+.filters dl, .filters dt {
+    padding: 0 !important;
+}
+
 /*input#work_search_other_tag_names_autocomplete,
 input#work_search_excluded_tag_names_autocomplete,
 input#work_search_query, input#work_search_words_from,
@@ -1215,7 +1219,7 @@ dt.freeform.tags, dd.freeform.tags a.tag:before {
 
 dd.rating.tags a.tag:before, dd.warning.tags a.tag:before, dd.category.tags a.tag:before,
 dd.fandom.tags a.tag:before, dd.relationship.tags a.tag:before, dd.character.tags a.tag:before,
-dd.freeform.tags a.tag:before, dd.language:before, dd.AO3E.track-works-meta-notes a.tag:before {
+dd.freeform.tags a.tag:before, dd.AO3E.track-works-meta-notes a.tag:before {
     content: " ⬫ ";
     font-weight: 500;
     color: #525252;
@@ -1916,6 +1920,7 @@ select:focus {
   font-size: inherit;
   padding: 0.5em;
   padding-right: 0em;
+  margin-bottom: 2em;
   line-height: 1.286;
   text-overflow: ellipsis;
   text-rendering: auto;
@@ -2026,7 +2031,7 @@ label {
 }*/
 
 .filters fieldset {
-    padding: 6px;
+    padding: 6px !important;
     border: 2.5px dashed #f2f2f2 !important;
     border-radius: 20px !important;
     margin: 1em 0;
@@ -2216,40 +2221,20 @@ input[type="radio"]:after,
 .filters [type="checkbox"]:after,
 .actions input[type="checkbox"]:after {
   -ms-transform: translateX(15%) translateY(-20%) scale(0.5) rotate(20deg);
-}
-
-input[type="checkbox"]:after,
-input[type="radio"]:after,
-.filters [type="radio"]:after,
-.filters [type="checkbox"]:after,
-.actions input[type="checkbox"]:after {
+  -o-transform: translateX(15%) translateY(-20%) scale(0.5) rotate(20deg);
+  -o-transition: -o-transform .3s ease, opacity .3s;
   -moz-transform: translateX(15%) translateY(-20%) scale(0.5) rotate(20deg);
   -moz-transition: -moz-transform .3s ease, opacity .3s;
 }
 
-input[type="checkbox"]:after,
-input[type="radio"]:after,
-.filters [type="radio"]:after,
-.filters [type="checkbox"]:after,
-.actions input[type="checkbox"]:after {
-  -o-transform: translateX(15%) translateY(-20%) scale(0.5) rotate(20deg);
-  -o-transition: -o-transform .3s ease, opacity .3s;
-}
-
 input[type="checkbox"],
 input[type="radio"],
 .filters [type="radio"],
 .filters [type="checkbox"],
 .actions input[type="checkbox"] {
-  -webkit-appearance: none;
-}
-
-input[type="checkbox"],
-input[type="radio"],
-.filters [type="radio"],
-.filters [type="checkbox"],
-.actions input[type="checkbox"] {
-  -moz-appearance: none;
+    border-radius: 1em !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .filters input:checked + .indicator + span {
@@ -2338,7 +2323,7 @@ input[type="checkbox"], input[type="radio"],
 input[type="checkbox"]:checked,
 .filters [type="checkbox"]:checked,
 .actions input[type="checkbox"]:checked {
-  background: #52525222;
+  background: #52525200;
   opacity: 1;
   transition: opacity .3s, transform .6s ease;
 }
@@ -2445,7 +2430,8 @@ textarea#collection_collection_profile_attributes_rules,
 textarea#collection_collection_profile_attributes_assignment_notification,
 textarea#collection_collection_profile_attributes_gift_notification,
 textarea#series_summary, textarea#chapter_summary,
-textarea#series_series_notes, textarea#chapter_notes {
+textarea#series_series_notes, textarea#chapter_notes,
+textarea#work_notes, textarea#work_endnotes, {
     border: none !important;
     background: #d7c8e344 !important;
     border-radius: 10px !important;
@@ -2614,7 +2600,7 @@ p, li, dd, hr {
 }
 
 form .notice, ul.notes, .caution, span.html-notes {
-    background: #ddd !important;
+    background: #ddd0 !important;
     color: #000;
     border-color: #fff0;
     padding: 0px 20px;
