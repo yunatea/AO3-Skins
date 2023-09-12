@@ -1059,7 +1059,7 @@ li.subscribe, li.download {
 
 input[type="submit"] {
     color: #000 !important;
-    font-size: 100% !important;
+    font-size: 1em !important;
     font-weight: 600;
     font-family: Georgia, serif !important;
     background: #f2f2f200 !important;
