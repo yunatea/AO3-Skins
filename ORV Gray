@@ -230,7 +230,7 @@ img[title="Restricted"], a[href="/users/orphan_account"] img.icon,
 #bookmark-symbols-key dt img {
   width: 0;
   height: 0;
-  padding: 25px 0 0 25px;
+  padding: 0px;
   background-size: contain;
 }
 
@@ -318,7 +318,7 @@ input[type=submit], button, .current, .actions label {
     font-size: 0.95em;
 }
 
-thead, tfoot, tfoot td, th, tr:hover, col.name, input, textarea, #modal .content, 
+thead, tfoot, tfoot td, th, tr:hover, col.name, textarea, #modal .content, 
 .actions a, .action, .actions input, button, .current, 
 .actions label,  span.unread, .replied, .fieldset fieldset.listbox, 
 span.claimed, .picture .header, .bookmark .user {
@@ -327,7 +327,7 @@ span.claimed, .picture .header, .bookmark .user {
     border-color: #525252 !important;
 }
 
-thead, tfoot, tfoot td, th, tr:hover, col.name, input, textarea,
+thead, tfoot, tfoot td, th, tr:hover, col.name, textarea,
 #modal .content, .actions a, .action, .actions input,
 button, .current, .actions label, span.unread, .replied, .listbox,
 .fieldset fieldset.listbox, span.claimed, .picture .header, .bookmark .user {
@@ -579,8 +579,9 @@ form.search input[type=text] {
 
 #dashboard.own {
     background: #52525222 !important;
-    border-radius: 20px !important;
+    border-radius: 0 0 20px 20px !important;
     text-align: justify;
+    margin-top: 0;
 }
 
 #dashboard a, #dashboard span {
@@ -594,14 +595,15 @@ form.search input[type=text] {
 }
 
 #dashboard span.current {
-    background: #ddd !important;
+    background: #525252 !important;
     border: 2px solid #525252 !important;
+    color: #ddd !important;
 }
 
 #dashboard a:hover {
-    border: 2px dashed #52525200 !important;
-    color: #000 !important;
     background: #ddd !important;
+    border: 2px solid #52525200 !important;
+    color: #000 !important;
 }
 
 span.current {
@@ -624,7 +626,7 @@ div#dashboard {
 }
 
 #main.dashboard, #dashboard {
-  margin-top: 1em;
+  margin-top: 0em;
   font-family: serif;
   border-radius: 15px 25px 50px;
 }
@@ -671,8 +673,8 @@ fieldset fieldset dl dl, dd.hideme, form blockquote.userstuff,
 
 .reading h4.viewed, tbody tr, thead td, #header #small_login, fieldset,
 form dl, fieldset dl dl, fieldset fieldset fieldset, fieldset fieldset dl dl, 
-dd.hideme, form blockquote.userstuff, .actions a:active, .current, 
-a.current, .current a:visited, .search span.tip {
+dd.hideme, form blockquote.userstuff, .current, a.current, .current a:visited,
+.search span.tip {
     border-colour: #bebebe !important;
 }
 
@@ -685,15 +687,21 @@ fieldset fieldset dl dl, dd.hideme, form blockquote.userstuff {
 /*-------------- FILTER -------------*/
 
 select, select:focus {
-    background: #f2f2f2 !important;
-    color: #525252 !important;
+    background: #52525222;
+    color: #000;
     font-family: monospace;
     font-weight: 600;
     font-size: 0.9em !important;
-    border: 0px solid #525252 !important;
+    border: 2px solid #52525200;
     border-radius: 50px !important;
     padding: 5px !important;
     text-align: center;
+}
+
+select:hover {
+    background: #52525222 !important;
+    color: #000 !important;
+    border: 2px solid #525252 !important;
 }
 
 input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="text" i]:focus {
@@ -704,7 +712,7 @@ dd.options {
     margin: 0px;
 }
 
-input#work_search_other_tag_names_autocomplete,
+/*input#work_search_other_tag_names_autocomplete,
 input#work_search_excluded_tag_names_autocomplete,
 input#work_search_query, input#work_search_words_from,
 input#work_search_words_to, input#work_search_date_from,
@@ -730,7 +738,7 @@ input#work_search_words_to:focus, input#work_search_date_from:focus,
 input#work_search_date_to:focus {
     background: #52525222 !important;
     color: #525252;
-}
+} */
 
 
 /*------------- TAGS -------------*/
@@ -1104,7 +1112,7 @@ li.subscribe, li.download {
     padding: 0px 5px 20px;
 }
 
-input[type="submit"] {
+/*input[type="submit"] {
     color: #000 !important;
     font-size: 0.95em !important;
     font-weight: 600;
@@ -1113,7 +1121,23 @@ input[type="submit"] {
     cursor: pointer !important;
     border-radius: 0px !important;
     border-bottom: 2px solid #f2f2f2 !important;
-    /*margin-bottom: 10px !important;*/
+    margin-bottom: 10px !important;*/
+}
+
+input[type="submit"] {
+    color: #000 !important;
+    font-size: 0.95em !important;
+    font-weight: 600;
+    font-family: Georgia, serif !important;
+    background: #f2f2f200 !important;
+    border-radius: 50px !important;
+    border: 2px solid #f2f2f2 !important;
+}
+
+input[type="submit"]:hover {
+    border: 2px solid #525252 !important;
+    /*background: #f2f2f200 !important;
+    color: #000 !important;*/
 }
 
 .actions * {
@@ -1392,7 +1416,8 @@ ul#alphabet, ul#alphabet:visited {
 span.disabled {
     padding: 0.25em 0.75em;
     font-size: 100%;
-    color: #52525200 !important;
+    color: #000 !important;
+    display: none !important;
 }
 
 
@@ -1498,8 +1523,8 @@ p.type {
     right: 2px !important;
 }*/
 
-#main .verbose legend, .comment h4.byline, .reading h4.viewed, .unread,
-.child, .unwrangled, .unreviewed, .verbose fieldset, form ul.notes,
+.comment h4.byline, .reading h4.viewed, .unread,
+.child, .unwrangled, .unreviewed, form ul.notes,
 #modal, .ui-sortable li, .comment_notice, .kudos_notice, div.dynamic,
 #ui-datepicker-div, .ui-datepicker table {
   background-color: #fae9c500;
@@ -1562,9 +1587,14 @@ span.claimed,
     background: #f2f2f2 !important;
 }
 
+.comment fieldset textarea {
+    background: #bec3ea33 !important;
+    border: 0px solid #bec3ea !important;
+}
+
 .comment fieldset textarea, .comment .userstuff {
-    background: #d7c8e333 !important;
-    border: 0px solid #d7c8e3;
+    background: #dfc3e333;
+    border: 0px solid #dfc3e3;
     border-radius: 10px !important;
     padding: 15px;
     margin: 20px 0 !important;
@@ -1596,10 +1626,20 @@ span.claimed,
   background-color: #fff;
 }
 
+.comment .icon {
+    height: 70px;
+    margin-bottom: 0;
+    width: 70px;
+}
+
 .icon {
     height: 70px;
     width: 70px;
     margin: 0;
+}
+
+.icon a {
+    border: none !important;
 }
 
 .comment div.icon {
@@ -1656,6 +1696,10 @@ button, .current, .actions label, legend, textarea {
   border-radius: 1.5em;
   box-shadow: none;
   font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+.actions a:active, .actions a:visited:active {
+    font-family: Georgia, serif;
 }
 
 img[title="Restricted"],
@@ -1920,9 +1964,10 @@ form dt {
     background: #ddd !important
 }
 
+
+
 .filters .submit input:hover {
-    border: 2px solid #bebebe !important;
-    color: #525252aa !important;
+    border: 2px solid #525252 !important;
 }
 
 label {
@@ -2210,10 +2255,6 @@ input[type="radio"],
   font-weight: inherit;
 }
 
-.filters .include input, .nomination .actions .yes+input {
-  border-color: #525252;
-}
-
 .filters .include [type="checkbox"]:checked,
 .filters .include [type="radio"]:checked:after,
 .nomination .actions .yes+input[type="checkbox"]:checked {
@@ -2327,17 +2368,24 @@ input[type="radio"]:after,
 /*---------- WORK ----------*/
 
 .verbose fieldset {
-    border-color: #000;
+    border: 2.5px dashed #525252;
     border-radius: 20px;
-  }
+    background: #f2f2f2 !important;
+}
 
 #main .verbose legend {
     color: #000;
-    background: #ddd !important;
-    font-size: 1.2em !important;
+    background: #f2f2f200 !important;
+    font-size: 1.3em !important;
     font-family: Georgia, Serif !important;
     font-weight: 600;
     margin: 0.5em 1em !important;
+    padding-bottom: 25px;
+}
+
+fieldset.warnings {
+    border: none;
+    background: #52525222 !important;
 }
 
 dt.rating.required, dt.warning.required, 
@@ -2356,8 +2404,9 @@ dt.permissions.comments, dt.required {
 
 input[type="text" i] {
     border-radius: 0px !important;
-    box-shadow: none;
+    box-shadow: none !important;
     border-bottom: 2px solid #000 !important;
+    border: none !important;
 }
 
 input#pseud_byline_autocomplete {
@@ -2365,8 +2414,12 @@ input#pseud_byline_autocomplete {
   0 0 0px 1000px #f2f2f200 inset !important;
 }
 
-li.input {
-    background: #ddd !important;
+li.input, .autocomplete input {
+    background: #52525200 !important;
+}
+
+li.input:hover, .autocomplete input:hover {
+    background: #52525222 !important;
 }
 
 fieldset.preface {
@@ -2544,6 +2597,7 @@ div#modal {
     font-family: Avenir, Helvetica, Arial, sans-serif !important;
     font-size: 0.95em !important;
     padding: 0;
+    text-align: justify !Important;
 }
 
 p, li, dd, hr {
@@ -2572,14 +2626,14 @@ span.html-notes {
 }
 
 .notice, .comment_notice, .kudos_notice, .caution, .error, .comment_error, .kudos_error, .alert.flash {
-    background: #f2f2f2 !important;
-    border: 0px dashed #525252;
-    margin: 0.75em auto !important;
+    background: #52525222 !important;
+    border: 2px solid#525252;
+    margin: 0.75em auto 1.5em !important;
     padding: 0.5em 1em !important;
     clear: right;
     box-shadow: none !important;
-    border-radius: 20px !important;
-    color: #525252;
+    border-radius: 0px !important;
+    color: #000;
     font-family: monospace;
     font-weight: 500;
 }
