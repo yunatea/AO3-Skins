@@ -83,7 +83,6 @@ dd.reading-time.AO3E::before,
 dd.finish-at.AO3E::before,
 dd.kudos-hits-ratio.AO3E::before
 {
-
   display: inline-block;
   width: 13px;
   height: 13px;
@@ -2376,7 +2375,8 @@ textarea#collection_collection_profile_attributes_intro,
 textarea#collection_collection_profile_attributes_rules,
 textarea#collection_collection_profile_attributes_assignment_notification,
 textarea#collection_collection_profile_attributes_gift_notification,
-textarea#series_summary, textarea#series_series_notes {
+textarea#series_summary, textarea#chapter_summary,
+textarea#series_series_notes, textarea#chapter_notes {
     border: none !important;
     background: #f2f2f2 !important;
     border-radius: 10px !important;
