@@ -681,7 +681,7 @@ dd.hideme, form blockquote.userstuff, .current, a.current, .current a:visited,
 fieldset, form dl, fieldset dl dl, fieldset fieldset fieldset, 
 fieldset fieldset dl dl, dd.hideme, form blockquote.userstuff {
     box-shadow: none !important;
-    padding: 0 15px 15px !important;
+    padding: 15px !important;
 }
 
 
