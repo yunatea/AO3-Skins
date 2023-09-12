@@ -28,9 +28,9 @@ dl.series dl.stats dt {
 
 dl.stats dd {
   font-family: monospace !important;
-  font-size: 1.1em;
+  font-size: 1.1em !important;
   padding: 0 !important;
-  margin: 0 0 auto 0;
+  margin: 0 15px auto 0;
 }
 
 dl.stats dd.kudos::before {
@@ -83,12 +83,16 @@ dd.reading-time.AO3E::before,
 dd.finish-at.AO3E::before,
 dd.kudos-hits-ratio.AO3E::before
 {
-  display: inline-block;
-  width: 13px;
-  height: 13px;
-  content: " ";
-  background-size: 13px 13px !important;
-  margin-right: 5px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    content: " ";
+    background-size: 10px 10px !important;
+    margin-right: 5px;
+}
+
+svg.AO3E--icon {
+    height: 11px !important;
 }
 
 dd.reading-time.AO3E::before,
@@ -171,9 +175,24 @@ h3 {
   color: #000 !important;
 }
 
-a, a:visited, a.link {
-  color: #525252;
-  border-bottom: 1px solid #525252;
+/*a,*/ a:link {
+    color: #000;
+    border-bottom: 1px solid #525252;
+}
+
+a:hover {
+    color: #000 ;
+    border-bottom: 2px dotted;
+}
+
+a:visited, a:link:visited {
+    color: #525252;
+    border-bottom: 1px solid #525252;
+}
+
+a:visited:hover, a.link:visited:hover {
+    color: #525252 !important;
+    border-bottom: 2px dotted !important;
 }
 
 .splash .link a {
@@ -192,11 +211,6 @@ a, a:visited, a.link {
 
 .blurb h4 a:link:hover, .blurb h4 a:link:visited:hover  {
   /*color: #bebebe !important;*/
-  border-bottom: 2px dotted !important;
-}
-
-a:hover, a.link:visited:hover, a:visited:hover {
-  color: #525252 !important;
   border-bottom: 2px dotted !important;
 }
 
@@ -725,7 +739,7 @@ input#work_search_date_to:focus {
 
 a.tag, a.tag:visited, a.tag:link {
   line-height: 1.1;
-  display: inline-block;
+  /*display: inline-block;*/
   padding: 0px 0px;
   margin: 0px 0px;
   border: none !important;
@@ -735,7 +749,7 @@ a.tag, a.tag:visited, a.tag:link {
   color: #000 !important;
 }
 
-a.tag:hover, a.tag:visited:hover, a.tag:link:hover, a.tag:hover, span.action:hover, span.action:hover {
+a.tag:hover, a.tag:visited:hover, a.tag:link:hover, span.action:hover, span.action:hover {
     background: #52525200 !important;
 }
 
@@ -744,8 +758,6 @@ a.tag:hover, a.tag:visited:hover, a.tag:link:hover, a.tag:hover, span.action:hov
   content: "҂";
   padding: 0 0.65em;
 }*/
-
-/*.meta a:before*/
 
 .warnings a:before, 
 .relationships a:before,
@@ -1152,40 +1164,38 @@ dt.series, dt.collections {
     font-size: 0.95em !important;
 }
 
-dt.rating.tags, dt.collections, dt.AO3E.track-works-meta-notes, dt.language {
+dt.rating.tags, dt.collections, dt.AO3E.track-works-meta-notes, dt.language, dt.stats, dt.series {
     color: #000;
 }
 
-dt.stats, dt.series {
-    color: #525252;
+dt.category.tags, dd.category.tags a.tag:before {
+    color: #7ca1d9 !important;
 }
 
-dt.category.tags {
-    color: #7ca1d9;
+dt.fandom.tags, dd.fandom.tags a.tag:before {
+    color: #bec3ea !important;
 }
 
-dt.fandom.tags {
-    color: #bec3ea;
+dt.relationship.tags, dd.relationship.tags a.tag:before {
+    color: #d7c8e3 !important;
 }
 
-dt.relationship.tags {
-    color: #d7c8e3;
+dt.character.tags, dd.character.tags a.tag:before {
+    color: #dfc3e3 !important;
 }
 
-dt.character.tags {
-    color: #dfc3e3;
+dt.freeform.tags, dd.freeform.tags a.tag:before {
+    color: #e7b5d3 !important;
 }
 
-dt.freeform.tags {
-    color: #e7b5d3;
-}
-
-
-.meta ul li:before {
+dd.rating.tags a.tag:before, dd.warning.tags a.tag:before, dd.category.tags a.tag:before,
+dd.fandom.tags a.tag:before, dd.relationship.tags a.tag:before, dd.character.tags a.tag:before,
+dd.freeform.tags a.tag:before, dd.language:before, dd.AO3E.track-works-meta-notes a.tag:before {
     content: " ⬫ ";
+    font-weight: 500;
     color: #525252;
-    
 }
+
 
 .meta dd ul li {
     padding: 0;
@@ -1507,6 +1517,10 @@ p.type {
     padding: 0.643em;
     font-size: 87.5%;
     box-shadow: none !important;
+}
+
+a.help.symbol.question.modal.modal-attached {
+    border: none !important;
 }
 
 thead,
@@ -2447,6 +2461,31 @@ div#modal {
 
 #modal .footer .action.modal-closer:hover {
     border: none !important;
+}
+
+
+/*---------- PROFILE ----------*/
+
+.home .header h2 {
+    margin-left: 100px;
+}
+
+.primary .icon {
+    position: absolute;
+    top: 0;
+    height: 100px !important;
+    width: 100px !important;
+}
+
+.home .header ul.actions {
+    text-align: right;
+    width: 75%;
+}
+
+.home .header .type {
+    font-family: monospace;
+    font-weight: 500;
+    font-size: 0.9em !important;
 }
 
 
