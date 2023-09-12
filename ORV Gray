@@ -681,6 +681,7 @@ dd.hideme, form blockquote.userstuff, .current, a.current, .current a:visited,
 fieldset, form dl, fieldset dl dl, fieldset fieldset fieldset, 
 fieldset fieldset dl dl, dd.hideme, form blockquote.userstuff {
     box-shadow: none !important;
+    padding: 0 15px 15px !important;
 }
 
 
@@ -2402,11 +2403,12 @@ dt.permissions.comments, dt.required {
     font-weight: 600;
 }
 
-input[type="text" i] {
+input, input[type="text" i] {
     border-radius: 0px !important;
     box-shadow: none !important;
     border-bottom: 2px solid #000 !important;
-    border: none !important;
+    border: none;
+    background: #0000;
 }
 
 input#pseud_byline_autocomplete {
@@ -2445,9 +2447,9 @@ textarea#collection_collection_profile_attributes_gift_notification,
 textarea#series_summary, textarea#chapter_summary,
 textarea#series_series_notes, textarea#chapter_notes {
     border: none !important;
-    background: #f2f2f2 !important;
+    background: #d7c8e344 !important;
     border-radius: 10px !important;
-    padding: 15px;
+    padding: 15px !important;
     width: -webkit-fill-available;
 }
 
@@ -2457,7 +2459,7 @@ textarea#collection_collection_profile_attributes_intro,
 textarea#collection_collection_profile_attributes_rules,
 textarea#collection_collection_profile_attributes_assignment_notification,
 textarea#collection_collection_profile_attributes_gift_notification {
-    margin: 0 20px 10px;
+    margin: 0 2px 10px;
 }
 
 form dt {
