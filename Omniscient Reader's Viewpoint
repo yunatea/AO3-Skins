@@ -563,25 +563,20 @@ form.search input[type=text] {
 /*--------------- DASHBOARD ---------------*/
 
 #dashboard, #dashboard.own {
-  margin-right: 0.1em !important;
-  background: #f2f2f2;
-  color: #cc996c;
-  box-shadow: none;
-  border-radius: 20px;
-  border-color: #f2f2f2;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  padding: 15px 0 /*0.5em 0.75em*/;
+    background: #52525200 !important;
+    color: #cc996c;
+    box-shadow: none;
+    border-radius: 0 0 20px 20px !important;
+    border-top: none !important;
+    border: 2.5px dashed #f2f2f2;
+    margin: 0 0.1em 1% 3.5% !important;
+    padding: 15px 0;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    text-align: center;
 }
 
 #dashboard {
     max-width: 92.5%;
-}
-
-#dashboard.own {
-    background: #52525222 !important;
-    border-radius: 0 0 20px 20px !important;
-    text-align: justify;
-    margin-top: 0;
 }
 
 #dashboard a, #dashboard span {
@@ -591,18 +586,18 @@ form.search input[type=text] {
     border-radius: 0px !important;
     border: 2px solid #0000 !important;
     line-height: 1.5 !important;
-    padding: 0.2em 0.5em 0 0.5em !important;
-}
-
-#dashboard span.current {
-    background: #525252 !important;
-    border: 2px solid #525252 !important;
-    color: #ddd !important;
+    padding: 0.2em 1em 0 !important;
 }
 
 #dashboard a:hover {
-    background: #ddd !important;
+    background: #f2f2f299 !important;
     border: 2px solid #52525200 !important;
+    color: #000 !important;
+}
+
+#dashboard span.current {
+    background: #bebebe !important;
+    border: 2px solid #f2f2f200 !important;
     color: #000 !important;
 }
 
@@ -619,16 +614,11 @@ span.current {
     line-height: 1.5 !important;
 }
 
-div#dashboard {
-    background: #52525222 !important;
-    border: 0px solid #f2f2f2 !important;
-    border-radius: 20px !important;
-}
-
 #main.dashboard, #dashboard {
-  margin-top: 0em;
-  font-family: serif;
-  border-radius: 15px 25px 50px;
+    margin-top: 0em;
+    font-family: serif;
+    border-radius: 0;
+    width: auto;
 }
 
 #dashboard ul {
@@ -1318,7 +1308,7 @@ p.kudos {
 #main {
   border-radius: 0px;
   box-shadow: 0 0 15px #0000;
-  padding: 2em 2.5em 3.5em;
+  padding: 2em 3.5% 3.5em;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
