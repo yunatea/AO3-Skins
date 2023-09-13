@@ -2202,7 +2202,7 @@ form .notice, ul.notes, .caution, span.html-notes {
   box-shadow: none !important;
 }
 
-span.html-notes {
+span.html-notes, span.rtf-notes {
   padding: 0px 10px !important;
 }
 
