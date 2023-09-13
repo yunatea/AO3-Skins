@@ -16,8 +16,17 @@ dl.stats dt {
   margin: 20px 10px 5px !important;
 }
 
+.bookmark .datetime {
+  top: 0px;
+}
+
 .datetime {
+  font-family: monospace;
+  font-weight: 600;
+  font-size: 0.8em;
   color: #525252;
+  position: relative;
+  top: 10px;
 }
 
 li.collection dl.stats dt, li.series dl.stats dt, dl.series dl.stats dt {
@@ -207,14 +216,16 @@ a:visited:hover, a.link:visited:hover {
 
 /*---------- HEADER LOGO ----------*/
 
-#header .logo, #greeting img.icon[src="/images/skins/iconsets/default/icon_user.png"], img[title="Restricted"], a[href="/users/orphan_account"] img.icon, .picture .icon[src="/images/skins/iconsets/default/icon_user.png"] img, .index .picture .icon[src="/images/skins/iconsets/default/icon_user.png"], .icon[src="/images/skins/iconsets/default/icon_user.png"], #symbols-key dl dt img, #bookmark-symbols-key dt img {
-  width: 0;
-  height: 0;
+#greeting img.icon[src="/images/skins/iconsets/default/icon_user.png"], img[title="Restricted"], a[href="/users/orphan_account"] img.icon, .picture .icon[src="/images/skins/iconsets/default/icon_user.png"] img, .index .picture .icon[src="/images/skins/iconsets/default/icon_user.png"], .icon[src="/images/skins/iconsets/default/icon_user.png"], #symbols-key dl dt img, #bookmark-symbols-key dt img {
+  width: 100%;
+  height: 100%;
   padding: 0px;
   background-size: contain;
 }
 
 #header .logo {
+  width: 0;
+  height: 0;  
   background: url(https://cdn.discordapp.com/attachments/1150012974614970428/1150013058052272190/Cute.png) no-repeat;
   padding: 24% 67%;
   background-size: contain;
@@ -370,7 +381,7 @@ a.dropdown-toggle {
 #header .actions a:hover {
   background: #eee0 !important;
   color: #525252 !important;
-    border: 0px !important;
+  border: 0px !important;
 }
 
 #header .dropdown:hover .menu, #header .open .menu {
@@ -584,11 +595,7 @@ span.current {
   box-shadow: none;
 }
 
-table, thead td, #header #small_login, 
-fieldset, form dl, fieldset dl dl, fieldset fieldset fieldset, 
-fieldset fieldset dl dl, dd.hideme, form blockquote.userstuff, 
-.ui-sortable li:hover, .listbox, fieldset fieldset.listbox, 
-.readings-index h3, .search span.tip, .flash, .notice, .error, .comment_error {
+table, thead td, #header #small_login, form dl, fieldset dl dl, fieldset fieldset fieldset, fieldset fieldset dl dl, dd.hideme, form blockquote.userstuff, .ui-sortable li:hover, .listbox, fieldset fieldset.listbox, .readings-index h3, .search span.tip, .flash, .notice, .error, .comment_error {
   background: #fff0 !important;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
@@ -806,14 +813,7 @@ a.tag:visited:hover, a.tag:hover {
   border: 0px !important;
 }
 
-ul.tags li.warnings {
-  float: left !important;
-  margin: 0;
-  border-radius: 15px;
-  padding: 0 !important;
-}
-
-ul.tags li.relationships, ul.tags li.characters, ul.tags li.freeforms {
+ul.tags li.warnings, ul.tags li.relationships, ul.tags li.characters, ul.tags li.freeforms {
   float: left !important;
   margin: 0;
   border-radius: 15px;
@@ -823,6 +823,7 @@ ul.tags li.relationships, ul.tags li.characters, ul.tags li.freeforms {
 li.warnings + li.relationships, li.relationships + li.characters, li.characters + li.freeforms, li.warnings + li.characters, li.warnings + li.freeforms, li.relationships + li.freeforms {
   clear: left;
   border-radius: 15px;
+  display: inline-flex !important;
 }
 
 
@@ -848,6 +849,7 @@ li.warnings + li.relationships:before {
   content: "Relationships ‧₊◜";
   color: #bec3ea;
   font-family: Georgia, serif !important;
+  font-size: 0.95em;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -856,6 +858,7 @@ li.warnings + li.characters:before, li.relationships + li.characters:before {
   content: "Characters ‧₊◜";
   color: #d7c8e9;
   font-family: Georgia, serif !important;
+  font-size: 0.95em;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -864,12 +867,13 @@ li.warnings + li.freeforms:before, li.relationships + li.freeforms:before, li.ch
   content: "Tropes ‧₊◜";
   color: #dfc3e3;
   font-family: Georgia, serif !important;
+  font-size: 0.95em;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 /*li.blurb blockquote p:first-child::before {
-    content: "𓍢ִ໋🌷͙֒ ";
+  content: "𓍢ִ໋🌷͙֒ ";
   color: #000;
   font-size: 100%;
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -995,8 +999,8 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   border: 2px solid #525252 !important;
-  /*background: #f2f2f200 !important;
-  color: #000 !important;*/
+  /*background: #f2f2f200 !important;*/
+  color: #000 !important;
 }
 
 .actions * {
@@ -1033,7 +1037,7 @@ dd.language {
   padding-top: 5px;
 }
 
-dt.rating.tags, dt.warning.tags, dt.category.tags, dt.fandom.tags, dt.relationship.tags, dt.character.tags, dt.freeform.tags, dt.language, dt.AO3E.track-works-meta-notes, dt.stats, dt.series, dt.collections {
+form dt, dt.rating.tags, dt.warning.tags, dt.category.tags, dt.fandom.tags, dt.relationship.tags, dt.character.tags, dt.freeform.tags, dt.language, dt.AO3E.track-works-meta-notes, dt.stats, dt.series, dt.collections {
   text-transform: capitalize;
   font-family: Georgia, serif !important;
   font-weight: 600;
@@ -1185,10 +1189,23 @@ body, #main.error, #main.slow, #main.maintenance, .required .autocomplete, .auto
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
-.work.own, .thread .even, .listbox .index, .statistics .index li:nth-of-type(even), dl.meta, dl.index dd, textarea, input, option, .toggled form, .dynamic form, .autocomplete .dropdown ul, .autocomplete .dropdown ul li, .autocomplete input {
+.work.own, .listbox .index, .statistics .index li:nth-of-type(even), dl.meta, dl.index dd, textarea, input, option, .autocomplete .dropdown ul, .autocomplete .dropdown ul li, .autocomplete input {
   border-radius: 20px;
   background-color: #f2f2f2;
   font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+.toggled form, .dynamic form {
+  border: 0px solid #7ca1d900;
+  border-radius: 20px;
+  background: #d7c8e333 !important;
+  box-shadow: none;
+  padding: 20px;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+.dynamic form fieldset {
+    padding: 0 !important;
 }
 
 .autocomplete .dropdown ul li:hover {
@@ -1233,7 +1250,7 @@ span.disabled {
 }
 
 .listbox>.heading, .listbox .heading a:visited {
-    padding: 0.5em 0.25em 0.5em 0em;
+  padding: 0.5em 0.25em 0.5em 0em;
 }
 
 .media-index .listbox {
@@ -1256,6 +1273,7 @@ span.disabled {
   border-radius: 15px !important;
   background: #7ca1d933 !important;
   padding: 15px !important;
+  margin-top: 20px;
 }
 
 .bookmark .actions {
@@ -1286,9 +1304,13 @@ li.blurb, .blurb .blurb {
 .blurb blockquote {
   background: #e7b5d333;
   border: 0px solid #e7b5d3;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 15px;
   margin: 20px 0 !important;
+}
+
+.blurb p.status .AO3E--icon {
+  height: 15px !important;
 }
 
 .bookmark .count a {
@@ -1323,7 +1345,7 @@ p.type {
 .comment h4.byline, .reading h4.viewed, .unread, .child, .unwrangled, .unreviewed, form ul.notes, #modal, .ui-sortable li, .comment_notice, .kudos_notice, div.dynamic, #ui-datepicker-div, .ui-datepicker table {
   background-color: #fae9c500;
   border-color: #000;
-  border-radius: 10px;
+  border-radius: 15px;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
@@ -1366,7 +1388,7 @@ thead, tfoot, tfoot td, th, tr:hover, col.name, input, textarea, #modal .content
 .comment fieldset textarea, .comment .userstuff {
   background: #dfc3e333;
   border: 0px solid #dfc3e3;
-  border-radius: 10px !important;
+  border-radius: 15px !important;
   padding: 15px;
   margin: 20px 0 !important;
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -1421,7 +1443,11 @@ thead, tfoot, tfoot td, th, tr:hover, col.name, input, textarea, #modal .content
 .comment h4.byline {
   background: #ddd;
   padding: 11px 10px 10px 90px;
-  margin: 0 auto -0.25em;
+  margin: 15px auto -0.25em;
+}
+
+.thread .even, .thread .odd {
+  margin: 20px 0;
 }
 
 .skins .primary .icon {
@@ -1448,6 +1474,15 @@ a.tag:visited:hover, .heading a.tag:visited:hover,
   border-radius: 1.5em;
   box-shadow: none;
   font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+.bookmark .status span, .bookmark .status a {
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 .actions a:active, .actions a:visited:active {
@@ -1492,9 +1527,10 @@ p.kudos, .required-tags .rating-general-audience, .required-tags .rating-explici
   content: "\25a8\25A2\25A2\25A2";
   word-break: break-all;
   display: block;
-  width: 2em;
-  line-height: 1;
+  width: 43px;
+  line-height: 0.8;
 }
+
 
 #symbols-key>dt:nth-of-type(2)::before {
   content: "\25A2\25a8\25A2\25A2";
@@ -1506,6 +1542,14 @@ p.kudos, .required-tags .rating-general-audience, .required-tags .rating-explici
 
 #symbols-key>dt:nth-of-type(4)::before {
   content: "\25A2\25A2\25A2\25a8";
+}
+
+#symbols-key dl {
+  border: 0px solid #ddd;
+}
+
+#symbols-key dl dt img {
+  opacity: 100%;
 }
 
 #symbols-key dl dt img[alt="G"] {
@@ -1577,7 +1621,7 @@ p.kudos, .required-tags .rating-general-audience, .required-tags .rating-explici
   background-color: #fff;
 }
 
-.listbox, .draft, li.relationships a, .dropdown, fieldset fieldset.listbox, fieldset, form dl, fieldset dl dl, fieldset fieldset fieldset, ieldset fieldset dl dl, dd.hideme, form blockquote.userstuff, .dynamic form fieldset, .toggled form fieldset, .toggled form dl, .secondary .toggled form, .secondary form, .required .autocomplete {
+.listbox, .draft, li.relationships a, .dropdown, fieldset fieldset.listbox, fieldset, form dl, fieldset dl dl, fieldset fieldset fieldset, ieldset fieldset dl dl, dd.hideme, form blockquote.userstuff, .toggled form fieldset, .toggled form dl, .secondary .toggled form, .secondary form, .required .autocomplete {
   background-color: #fff;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   border-radius: 10xp;
@@ -1594,7 +1638,7 @@ p.kudos, .required-tags .rating-general-audience, .required-tags .rating-explici
 /*---------- FILTER -----------*/
 
 form dt {
-  border-bottom: 1px solid #bebebe !important;
+  border-bottom: 1px solid #bebebe00 !important;
 }
 
 .autocomplete.dropdown {
@@ -1675,7 +1719,7 @@ label {
 }
 
 .filters .group dt.bookmarker {
-  border-top: 1px solid #525252;
+  border-top: 1px solid #52525200;
   margin-top: 0.643em;
   padding-top: 0.643em;
 }
@@ -1771,12 +1815,12 @@ label>input[type="checkbox"] {
 
 input[type="checkbox"], input[type="radio"], .filters [type="radio"], .filters [type="checkbox"], .actions input[type="checkbox"] {
   appearance: none;
-  border: 1px solid #525252;
+  border: 1.5px solid #000;
   border-radius: 0.375em;
   cursor: pointer;
   display: inline-block;
-  height: 1.125em;
-  width: 1.125em;
+  height: 0.95em;
+  width: 0.95em;
   margin: 0;
   outline: none;
   position: relative;
@@ -1788,6 +1832,11 @@ input[type="checkbox"], input[type="radio"], .filters [type="radio"], .filters [
   -webkit-transition: background .3s, border-color .3s;
   -moz-transition: background .3s, border-color .3s;
   -o-transition: background .3s, border-color .3s;
+}
+
+input[type="radio"]:after {
+    width: 77% !important;
+    height: 77% !important;
 }
 
 input[type="checkbox"]:after, input[type="radio"]:after, .filters [type="radio"]:after, .filters [type="checkbox"]:after, .actions input[type="checkbox"]:after {
@@ -1860,9 +1909,17 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 /*---------- WORK ----------*/
 
 .verbose fieldset {
-  border: 2.5px dashed #525252;
-  border-radius: 20px;
-  background: #f2f2f2 !important;
+    border: 2.5px dashed #525252;
+    border-radius: 20px;
+    background: #f2f2f2;
+    margin: 1em 0 !important;
+}
+
+dd fieldset, div#bookmark-form {
+    background: #7ca1d922 !important;
+    border: none !important;
+    border-radius: 15px !important;
+    box-shadow: none !important;
 }
 
 #main .verbose legend {
@@ -1875,14 +1932,9 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
   padding-bottom: 25px;
 }
 
-fieldset.warnings {
-  border: none;
-  background: #52525222 !important;
-}
-
-dt.rating.required, dt.warning.required, dt.fandom.required, dt.category, dt.relationship, dt.character,  dt.freeform, dt.title.required, dt.byline.coauthors, dt.summary, dt.notes, dt.language.required, dt.backdate, dt.skin, dt.permissions.comments, dt.required {
+form dt, dt.rating.required, label, .notes, dt.permissions.comments /*dt.warning.required, dt.fandom.required, dt.category, dt.relationship, dt.character, dt.freeform, dt.title.required, dt.byline.coauthors, dt.summary, dt.notes, dt.language.required, dt.backdate, dt.skin, dt.required*/ {
   color: #000;
-  font-size: 1em !important;
+  font-size: 0.9em !important;
   font-family: Avenir, Helvetica, Arial, sans-serif !important;
   font-weight: 600;
 }
@@ -1892,7 +1944,11 @@ input, input[type="text" i] {
   box-shadow: none !important;
   border-bottom: 2px solid #000 !important;
   border: none;
-  background: #0000;
+  background: #0000 !important;
+}
+
+input:hover, input[type="text" i]:hover {
+  background: #52525222 !important;
 }
 
 input#pseud_byline_autocomplete {
@@ -1900,6 +1956,7 @@ input#pseud_byline_autocomplete {
   0 0 0px 1000px #f2f2f200 inset !important;
 }
 
+/*
 li.input, .autocomplete input {
   background: #52525200 !important;
 }
@@ -1907,10 +1964,7 @@ li.input, .autocomplete input {
 li.input:hover, .autocomplete input:hover {
   background: #52525222 !important;
 }
-
-fieldset.preface {
-  margin: 0.643em !important;
-}
+*/
 
 fieldset#co-authors-options {
   border: none !important;
@@ -1925,7 +1979,7 @@ ul.autocomplete {
 textarea#work_summary, textarea#content, textarea#skin_css, textarea#collection_collection_profile_attributes_faq, textarea#collection_collection_profile_attributes_intro, textarea#collection_collection_profile_attributes_rules, textarea#collection_collection_profile_attributes_assignment_notification, textarea#collection_collection_profile_attributes_gift_notification, textarea#series_summary, textarea#chapter_summary, textarea#series_series_notes, textarea#chapter_notes, textarea#work_notes, textarea#work_endnotes, {
   border: none !important;
   background: #d7c8e344 !important;
-  border-radius: 10px !important;
+  border-radius: 15px !important;
   padding: 15px !important;
   width: -webkit-fill-available;
 }
@@ -1935,13 +1989,36 @@ textarea#content, textarea#skin_css, textarea#collection_collection_profile_attr
 }
 
 form dt {
-  border-bottom: 1px dotted #bebebe00 !important;
+  float: left;
+  clear: left;
+  min-width: 10.5em;
+  width: 25%;
+  padding: 0 0.5625em 0 0;
+  border-bottom: 0px solid #f3efec00;
 }
 
 form dd, form dd.any {
   float: left;
   width: 72.5%;
-  margin: 0 0 1em !important;
+  margin: 0 0 15px !important;
+}
+
+li.added.tag {
+    font-size: 0.85em;
+}
+
+span.delete {
+    border: 1px solid #525252 !important;
+}
+
+.delete a, span.delete {
+    border: none !Important;
+    color: #525252;
+    font-weight: 900;
+    margin-right: 1em;
+    padding: 0 0.1em 0.15em;
+    box-shadow: none !important;
+    border-radius: 1em;
 }
 
 fieldset.create {
@@ -1972,6 +2049,15 @@ div#modal {
   padding: 15px;
   background: #f2f2f2;
   border-radius: 20px;
+}
+
+#modal .footer {
+  height: auto;
+  line-height: 1em;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 15px;
+  background: #7ca1d933;
 }
 
 #modal .footer .action.modal-closer {
@@ -2062,7 +2148,7 @@ div#modal {
 }
 
 p, li, dd, hr {
-  margin: 1em 0;
+  margin: 0 0 1em 0;
 }
 
 .flash,
