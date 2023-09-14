@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
 #workskin {
   text-align: justify;
   margin: auto !important;
@@ -47,7 +50,7 @@ li.collection dl.stats dt, li.series dl.stats dt, dl.series dl.stats dt {
 
 dl.stats dd {
   font-family: monospace !important;
-  font-size: 1.1em !important;
+  font-size: 1em !important;
   padding: 0 !important;
   margin: 0 15px auto 0;
 }
@@ -153,12 +156,12 @@ dd.kudos-hits-ratio.AO3E::before, dd.kudos-hits-ratio::before {
 /* ---------- FONT ----------*/
 
 .listbox .index, .dashboard .listbox .index, form .notice, form ul.notes, form.verbose legend, .verbose form legend, .actions a, .actions a:link, .action, .action:link, button, .current, .actions label {
-  font-family: Georgia, serif;
+  font-family: "Lora", Georgia, serif;
   color: #000 !important;
 }
 
 h1, h2, h3, h4, h5, h6, .heading {
-  font-family: Georgia, serif !important;
+  font-family: "Lora", Georgia, serif !important;
   font-weight: 600;
   word-wrap: break-word !important;
 }
@@ -340,7 +343,7 @@ thead, tfoot, tfoot td, th, tr:hover, col.name, textarea, #modal .content, .acti
 #header .primary .dropdown a:focus{
   color: #525252 !important;
   background: #f2f2f200 !important;
-  font-family: Georgia, serif;
+  font-family: "Lora", Georgia, serif;
 }
 
 #header .primary .open a,  #header .primary .dropdown:hover a {
@@ -569,7 +572,7 @@ form.search input[type=text] {
 #dashboard a, #dashboard span {
   font-size: 0.95em !important;
   font-weight: 600;
-  font-family: monospace /*Georgia, serif*/;
+  font-family: monospace /*"Lora", Georgia, serif*/;
   border-radius:0 !important;
   border: 2px solid #0000 !important;
   line-height: 1.5 !important;
@@ -591,7 +594,7 @@ form.search input[type=text] {
 span.current {
   font-size: 1em !important;
   font-weight: 600;
-  font-family: Georgia, serif;
+  font-family: "Lora", Georgia, serif;
 }
 
 #outer .current {
@@ -606,6 +609,14 @@ span.current {
   font-family: serif;
   border-radius: 0;
   width: auto;
+}
+
+#main, #main.dashboard {
+    margin: auto !important;
+}
+
+#main.dashboard {
+    margin: 0.5em auto 1em 16em;
 }
 
 #dashboard ul {
@@ -861,7 +872,7 @@ ul.tags li.warnings:first-child:before {
 }
 
 .blurb .fandoms::before, li.warnings + li.relationships:before, li.warnings + li.characters:before, li.relationships + li.characters:before, li.warnings + li.freeforms:before, li.relationships + li.freeforms:before, li.characters + li.freeforms:before {
-  font-family: Georgia, serif !important;
+  font-family: "Lora", Georgia, serif !important;
   font-size: 0.95em;
   font-weight: 600;
   text-transform: uppercase;
@@ -993,7 +1004,7 @@ li.chapter.entire, li.chapter.next, li.chapter, li.mark, li#show_comments_link_t
   color: #000 !important;
   font-size: 0.95em !important;
   font-weight: 600;
-  font-family: Georgia, serif !important;
+  font-family: "Lora", Georgia, serif !important;
   background: #f2f2f200 !important;
   cursor: pointer !important;
   border-radius:0 !important;
@@ -1005,7 +1016,7 @@ input[type="submit"] {
   color: #000 !important;
   font-size: 0.95em !important;
   font-weight: 600;
-  font-family: Georgia, serif !important;
+  font-family: "Lora", Georgia, serif !important;
   background: #f2f2f200 !important;
   border-radius: 50px !important;
   border: 2px solid #f2f2f2 !important;
@@ -1053,7 +1064,7 @@ dd.language {
 
 form dt, dt.rating.tags, dt.warning.tags, dt.category.tags, dt.fandom.tags, dt.relationship.tags, dt.character.tags, dt.freeform.tags, dt.language, dt.AO3E.track-works-meta-notes, dt.stats, dt.series, dt.collections {
   text-transform: capitalize;
-  font-family: Georgia, serif !important;
+  font-family: "Lora", Georgia, serif !important;
   font-weight: 600;
   padding-top: 5px;
   padding-bottom:0;
@@ -1524,7 +1535,7 @@ a.tag:visited:hover, .heading a.tag:visited:hover,
 }
 
 .actions a:active, .actions a:visited:active {
-  font-family: Georgia, serif;
+  font-family: "Lora", Georgia, serif;
 }
 
 img[title="Restricted"], .blurb h4 img[title="Restricted"] {
@@ -1947,7 +1958,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
   color: #525252 !important;
   background: #f2f2f200 !important;
   font-size: 1.3em !important;
-  font-family: Georgia, Serif !important;
+  font-family: "Lora", Georgia, serif !important;
   font-weight: 600;
   margin: 0.5em 1em !important;
   padding-bottom: 8px;
@@ -2222,4 +2233,5 @@ span.html-notes, span.rtf-notes {
   color: #000;
   font-family: monospace;
   font-weight: 500;
+  font-size: 0.95em;
 }
