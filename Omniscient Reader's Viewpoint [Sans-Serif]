@@ -1059,7 +1059,7 @@ dd.language {
 }
 
 form dt, dt.rating.tags, dt.warning.tags, dt.category.tags, dt.fandom.tags, dt.relationship.tags, dt.character.tags, dt.freeform.tags, dt.language, dt.AO3E.track-works-meta-notes, dt.stats, dt.series, dt.collections {
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-family: "Lora", Avenir, Helvetica, Arial, sans-serif !important;
   font-weight: 600;
   padding-top: 5px;
