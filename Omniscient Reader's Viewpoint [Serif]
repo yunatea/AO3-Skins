@@ -891,14 +891,14 @@ li.warnings + li.freeforms:before, li.relationships + li.freeforms:before, li.ch
   font-weight: 600;
 }/*
 
-.blurb ul.series:before {
+/*.blurb*/ ul.series:before {
     content: "૪" !important;
     color: #e7b5d3;
     font-family: Avenir, Helvetica, Arial, sans-serif;
     font-weight: 600;
 }
 
-.blurb ul.series {
+/*.blurb*/ ul.series {
     margin: 0 0 20px !important;
 }
 
@@ -929,7 +929,7 @@ li.warnings + li.freeforms:before, li.relationships + li.freeforms:before, li.ch
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
-.splash .browse li a:before {
+/*.splash .browse li a:before {
   color: #1a5ef0;
   content: "\272D";
   padding: 0 .25em 0 0;
@@ -939,7 +939,7 @@ li.warnings + li.freeforms:before, li.relationships + li.freeforms:before, li.ch
   color: #1a5ef0;
   content: "\272D";
   padding: 0 .25em 0 0;
-}
+}*/
 
 div.userstuff ul li {
   list-style-type: none;
@@ -1237,6 +1237,10 @@ body, #main.error, #main.slow, #main.maintenance, .required .autocomplete, .auto
   padding: 30px 0;
   border-top: 2px solid #000;
   margin-top: 30px;
+}
+
+.filtered .index {
+    margin-top: 15px;
 }
 
 
@@ -1725,7 +1729,7 @@ label {
 }
 
 .filters .expander::before, .filters .expanded .expander::before {
-  content: "₊˚ପ⊹";
+  content: "#";
   margin-right: 5px;
   color: #000;
   font-weight: 500;
