@@ -121,7 +121,7 @@ dd.kudos-hits-ratio.AO3E::before, dd.kudos-hits-ratio::before {
   border-radius:0;
   border-top: 5px solid #525252 !important;
   background: #f2f2f2;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 #footer h4 {
@@ -136,25 +136,25 @@ dd.kudos-hits-ratio.AO3E::before, dd.kudos-hits-ratio::before {
   color: #fcf67e !important;
   border-radius:0;
   padding:0;
-  font-family: Georgia, serif !important;
+  font-family: Avenir, Helvetica, Arial, sans-serif !important;
   color: #525252 !important;
 }
 
 #footer a {
   color: #000 !important;
-  font-family: Georgia, serif !important;
+  font-family: Avenir, Helvetica, Arial, sans-serif !important;
 }
 
 
 /* ---------- FONT ----------*/
 
 .listbox .index, .dashboard .listbox .index, form .notice, form ul.notes, form.verbose legend, .verbose form legend, .actions a, .actions a:link, .action, .action:link, button, .current, .actions label {
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   color: #000 !important;
 }
 
 h1, h2, h3, h4, h5, h6, .heading {
-  font-family: Georgia, serif !important;
+  font-family: Avenir, Helvetica, Arial, sans-serif !important;
   font-weight: 600;
   word-wrap: break-word !important;
 }
@@ -246,7 +246,7 @@ a:visited:hover, a.link:visited:hover {
   background-color: #ddd !important;
   padding-top: 0em;
   border-radius:0 !important;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 #header {
@@ -255,7 +255,7 @@ a:visited:hover, a.link:visited:hover {
   border-top: 5px solid #52525200;
   border-bottom: 5px solid #525252;
   box-shadow: none !important;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 #header .user {
@@ -265,7 +265,7 @@ a:visited:hover, a.link:visited:hover {
 
 #header .user a, #small_login .action {
   padding: 0.25em 0.75em;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 #greeting p.icon {
@@ -276,7 +276,7 @@ a:visited:hover, a.link:visited:hover {
   height: 20%;
   background: none;
   width: 25%;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 #header .heading a {
@@ -315,7 +315,7 @@ thead, tfoot, tfoot td, th, tr:hover, col.name, textarea, #modal .content,  .act
 thead, tfoot, tfoot td, th, tr:hover, col.name, textarea, #modal .content, .actions a, .action, .actions input, button, .current, .actions label, span.unread, .replied, .listbox, .fieldset fieldset.listbox, span.claimed, .picture .header, .bookmark .user {
   border-color: #fff0 !important;
   background: #ddd;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   border-radius:0 !important;
   margin-bottom: 10px;
 }
@@ -336,7 +336,7 @@ thead, tfoot, tfoot td, th, tr:hover, col.name, textarea, #modal .content, .acti
 #header .primary .dropdown a:focus{
   color: #525252 !important;
   background: #f2f2f200 !important;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 #header .primary .open a,  #header .primary .dropdown:hover a {
@@ -365,7 +365,7 @@ a.dropdown-toggle {
 #header .actions a:focus, #header .open a,  #header .dropdown .menu, #greeting .dropdown .menu,  #greeting .dropdown .menu a {
   background: #f2f2f2 !important;
   color: #525252 !important;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   border-radius: 20px !important;
 }
 
@@ -373,7 +373,7 @@ a.dropdown-toggle {
   border-radius:0 !important;
   color: #000 !important;
   padding: 0.5em 0.5em;
-  font-family: Georgia, serif !important;
+  font-family: Avenir, Helvetica, Arial, sans-serif !important;
   font-weight: 600 !important;
   font-size: 0.95em !important;
 }
@@ -402,7 +402,7 @@ a.dropdown-toggle {
 
 #header .search .text {
   width: 100%;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 #header #search .text {
@@ -483,7 +483,7 @@ form.search input[type=text] {
 
 #header, #inner.wrapper {
   margin: 0em;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 #header .primary li:not(.search) {
@@ -501,7 +501,7 @@ form.search input[type=text] {
   background: #fff !important;
   color: #79a8c9 !important;
   border-radius: 40px;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 #greeting li {
@@ -509,7 +509,7 @@ form.search input[type=text] {
   box-shadow: none;
   margin-right: 0.3em !important;
   border: 15px;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 #greeting {
@@ -554,7 +554,7 @@ form.search input[type=text] {
   border: 2.5px dashed #f2f2f2;
   margin: 0 0.1em 1% 3.5% !important;
   padding: 15px 0;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
 }
 
@@ -565,7 +565,7 @@ form.search input[type=text] {
 #dashboard a, #dashboard span {
   font-size: 0.95em !important;
   font-weight: 600;
-  font-family: monospace /*Georgia, serif*/;
+  font-family: monospace /*Avenir, Helvetica, Arial, sans-serif*/;
   border-radius:0 !important;
   border: 2px solid #0000 !important;
   line-height: 1.5 !important;
@@ -587,7 +587,7 @@ form.search input[type=text] {
 span.current {
   font-size: 1em !important;
   font-weight: 600;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 #outer .current {
@@ -616,7 +616,7 @@ span.current {
 
 table, thead td, #header #small_login, form dl, fieldset dl dl, fieldset fieldset fieldset, fieldset fieldset dl dl, dd.hideme, form blockquote.userstuff, .ui-sortable li:hover, .listbox, fieldset fieldset.listbox, .readings-index h3, .search span.tip, .flash, .notice, .error, .comment_error {
   background: #fff0 !important;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 body, #main.error, #main.slow, #main.maintenance, .required .autocomplete, .autocomplete .notice, .post .required .warnings, .listbox .heading, .listbox .heading a:visited, .userstuff h2, .userstuff caption, .userstuff table, .userstuff td, .userstuff col, .userstuff tr, .userstuff thead, .userstuff tfoot, .userstuff tbody, .userstuff th, .userstuff thead td, .userstuff th a, .userstuff th a:link, a.cloud3, #header .search input[type="text"] {
@@ -682,7 +682,7 @@ a.tag, a.tag:visited, a.tag:link {
   margin:00;
   border: none !important;
   border-radius: 10px;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   font-size: 0.95em !important;
   color: #000 !important;
 }
@@ -851,13 +851,13 @@ li.warnings + li.relationships, li.relationships + li.characters, li.characters 
 ul.tags li.warnings:first-child:before {
   content: "☁️";
   color: #000;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   font-weight: 600;
   padding: 0 0.2em 0 0;
 }
 
 .blurb .fandoms::before, li.warnings + li.relationships:before, li.warnings + li.characters:before, li.relationships + li.characters:before, li.warnings + li.freeforms:before, li.relationships + li.freeforms:before, li.characters + li.freeforms:before {
-  font-family: Georgia, serif !important;
+  font-family: Avenir, Helvetica, Arial, sans-serif !important;
   font-size: 0.95em;
   font-weight: 600;
   text-transform: uppercase;
@@ -887,14 +887,14 @@ li.warnings + li.freeforms:before, li.relationships + li.freeforms:before, li.ch
   content: "𓍢ִ໋🌷͙֒ ";
   color: #000;
   font-size: 100%;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   font-weight: 600;
 }/*
 
 .blurb ul.series:before {
     content: "૪" !important;
     color: #e7b5d3;
-    font-family: Georgia, serif;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
     font-weight: 600;
 }
 
@@ -904,7 +904,7 @@ li.warnings + li.freeforms:before, li.relationships + li.freeforms:before, li.ch
 
 #workskin .notes, dl.meta, .reading h4.viewed, none !important .user, .comment .posted, .comment .edited {
   font-size: 95%;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 #workskin .preface.group .byline.heading a {
@@ -918,7 +918,7 @@ li.warnings + li.freeforms:before, li.relationships + li.freeforms:before, li.ch
 #workskin h2 {
   font-size: 2.7em;
   color: #fff;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 #workskin .hr {
@@ -926,7 +926,7 @@ li.warnings + li.freeforms:before, li.relationships + li.freeforms:before, li.ch
   border: none;
   text-align: justify;
   color: #fff;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 .splash .browse li a:before {
@@ -989,7 +989,7 @@ li.chapter.entire, li.chapter.next, li.chapter, li.mark, li#show_comments_link_t
   color: #000 !important;
   font-size: 0.95em !important;
   font-weight: 600;
-  font-family: Georgia, serif !important;
+  font-family: Avenir, Helvetica, Arial, sans-serif !important;
   background: #f2f2f200 !important;
   cursor: pointer !important;
   border-radius:0 !important;
@@ -1001,7 +1001,7 @@ input[type="submit"] {
   color: #000 !important;
   font-size: 0.95em !important;
   font-weight: 600;
-  font-family: Georgia, serif !important;
+  font-family: Avenir, Helvetica, Arial, sans-serif !important;
   background: #f2f2f200 !important;
   border-radius: 50px !important;
   border: 2px solid #f2f2f2 !important;
@@ -1026,7 +1026,7 @@ dl.meta, li.comment {
   background: #f2f2f2 !important;
   border-radius: 20px !important;
   border: 2.5px dashed #525252 !important;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 .meta dt {
@@ -1049,7 +1049,7 @@ dd.language {
 
 form dt, dt.rating.tags, dt.warning.tags, dt.category.tags, dt.fandom.tags, dt.relationship.tags, dt.character.tags, dt.freeform.tags, dt.language, dt.AO3E.track-works-meta-notes, dt.stats, dt.series, dt.collections {
   text-transform: capitalize;
-  font-family: Georgia, serif !important;
+  font-family: Avenir, Helvetica, Arial, sans-serif !important;
   font-weight: 600;
   padding-top: 5px;
   padding-bottom:0;
@@ -1166,20 +1166,20 @@ p.kudos {
   background-position: left top;
   background-size: 2em auto;
   border-radius: 10px;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 #main, body, dl.meta, #ibox_wrapper, #ibox_content {
   border-radius: 20px;
   background: #ddd0;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 #main {
   border-radius:0;
   box-shadow: 0 0 15px #0000;
   padding: 2em 3.5% 3.5em;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 ol.work.index.group {
@@ -1188,25 +1188,25 @@ ol.work.index.group {
 
 .reading h4.viewed, tbody tr, thead td, #header #small_login, fieldset, form dl, fieldset dl dl, fieldset fieldset fieldset, fieldset fieldset dl dl, dd.hideme, form blockquote.userstuff, form dt, .actions a:active, .current, a.current, .current a:visited, .search span.tip fieldset fieldset.listbox {
   border-color: #525252;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 .reading h4.viewed,
 .bookmark .user {
   box-shadow: none;
   border-radius: 20px;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 body, #main.error, #main.slow, #main.maintenance, .required .autocomplete, .autocomplete .notice, .post .required .warnings, .listbox .heading, .listbox .heading a:visited, .userstuff h2, .userstuff caption, .userstuff table, .userstuff td, .userstuff col, .userstuff tr, .userstuff thead, .userstuff tfoot, .userstuff tbody, .userstuff th, .userstuff thead td, .userstuff th a, .userstuff th a:link, a.cloud3, #header .search input[type="text"] {
   color: #000;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 .work.own, .listbox .index, .statistics .index li:nth-of-type(even), dl.meta, dl.index dd, textarea, input, option, .autocomplete .dropdown ul, .autocomplete .dropdown ul li, .autocomplete input {
   border-radius: 20px;
   background-color: #f2f2f2;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 .toggled form, .dynamic form {
@@ -1216,7 +1216,7 @@ body, #main.error, #main.slow, #main.maintenance, .required .autocomplete, .auto
   box-shadow: none;
   padding: 20px;
   margin: 40px 40px 20px;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 .toggled form fieldset{
@@ -1313,7 +1313,7 @@ li.blurb, .listbox li.blurb {
   background: #f2f2f2 !important;
   border-radius: 20px !important;
   border: 2.5px dashed #525252 !important;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 li.blurb, .blurb .blurb {
@@ -1365,7 +1365,7 @@ p.type {
   background-color: #fae9c500;
   border-color: #000;
   border-radius: 15px;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 #ui-datepicker-div {
@@ -1386,7 +1386,7 @@ a.help.symbol.question.modal.modal-attached {
 thead, tfoot, tfoot td, th, tr:hover, col.name, input, textarea, #modal .content, .actions a, .action, .actions input, button, .current, .actions label, span.unread, .replied, .listbox, .fieldset fieldset.listbox, span.claimed, .system .latest h3, .system div.news h3, .picture .header, .bookmark .user {
   border-color: #fff;
   background: #ddd;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   border-radius: 20px;
   margin-bottom: 10px;
 }
@@ -1421,7 +1421,7 @@ textarea {
   border-radius: 15px !important;
   padding: 15px;
   margin: 20px 0 !important;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   opacity: 1;
   width: -webkit-fill-available;
 }
@@ -1430,7 +1430,7 @@ textarea {
   background: #fff;
   color: #525252;
   border-color: #fff;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 .icon {
@@ -1500,7 +1500,7 @@ a.tag:visited:hover, .heading a.tag:visited:hover,
   border: none;
   border-radius: 1.5em;
   box-shadow: none;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 .bookmark .status span {
@@ -1516,7 +1516,7 @@ a.tag:visited:hover, .heading a.tag:visited:hover,
 }
 
 .actions a:active, .actions a:visited:active {
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 img[title="Restricted"], .blurb h4 img[title="Restricted"] {
@@ -1655,7 +1655,7 @@ p.kudos, .required-tags .rating-general-audience, .required-tags .rating-explici
 /*
 .listbox, .draft, li.relationships a, .dropdown, fieldset fieldset.listbox, fieldset, form dl, fieldset dl dl, fieldset fieldset fieldset, ieldset fieldset dl dl, dd.hideme, form blockquote.userstuff, .toggled form fieldset, .toggled form dl, .secondary .toggled form, .secondary form, .required .autocomplete {
   background-color: #fff;
-  font-family: Georgia, serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   border-radius: 10px;
 }*/
 
@@ -1710,7 +1710,7 @@ form dt {
 
 label {
   margin-right: 0.375em;
-  font-family: Georgia, serif !important;
+  font-family: Avenir, Helvetica, Arial, sans-serif !important;
   font-size: 0.85em;
 }
 
@@ -1741,7 +1741,7 @@ label {
   padding: 5px 0;
   font-size: 0.9em !important;
   background: none;
-  font-family: Georgia, serif !important;
+  font-family: Avenir, Helvetica, Arial, sans-serif !important;
   margin: 2px 0 0 0 !important;
   color: #000 !important;
   border-bottom: 2px solid #52525222 !important;
@@ -1953,7 +1953,7 @@ dd fieldset {
   color: #000;
   background: #f2f2f200 !important;
   font-size: 1.3em !important;
-  font-family: Georgia, Serif !important;
+  font-family: Avenir, Helvetica, Arial, sans-serif !important;
   font-weight: 600;
   margin: 0.5em 1em !important;
   padding-bottom: 25px;
@@ -1962,7 +1962,7 @@ dd fieldset {
 form dt, dt.rating.required, label, .notes, dt.permissions.comments /*dt.warning.required, dt.fandom.required, dt.category, dt.relationship, dt.character, dt.freeform, dt.title.required, dt.byline.coauthors, dt.summary, dt.notes, dt.language.required, dt.backdate, dt.skin, dt.required*/ {
   color: #000;
   font-size: 0.9em !important;
-  font-family: Georgia, serif !important;
+  font-family: Avenir, Helvetica, Arial, sans-serif !important;
   font-weight: 500;
 }
 
@@ -2172,7 +2172,7 @@ div#modal {
 .userstuff p, .userstuff details {
   margin: 0.5em auto;
   line-height: 1.5;
-  font-family: Georgia, serif !important;
+  font-family: Avenir, Helvetica, Arial, sans-serif !important;
   font-size: 0.95em !important;
   padding: 0;
   text-align: justify !Important;
