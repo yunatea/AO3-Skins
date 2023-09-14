@@ -2191,7 +2191,7 @@ h2.heading a {
 /*___ NEWS ___*/
 
 .userstuff p, .userstuff details {
-  margin: 0.5em auto;
+  margin: 10px auto;
   line-height: 1.5;
   font-family: Avenir, Helvetica, Arial, sans-serif !important;
   /*font-size: 1.125em !important;*/
