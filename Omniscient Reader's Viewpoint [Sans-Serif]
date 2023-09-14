@@ -4,6 +4,7 @@
 #workskin {
   text-align: justify;
   margin: auto !important;
+  font-size: 1.125em !important
 }
 
 blockquote.meta dl.stats {
@@ -2193,7 +2194,7 @@ h2.heading a {
   margin: 0.5em auto;
   line-height: 1.5;
   font-family: Avenir, Helvetica, Arial, sans-serif !important;
-  font-size: 1.125em !important;
+  /*font-size: 1.125em !important;*/
   padding: 0;
   text-align: justify !Important;
 }
