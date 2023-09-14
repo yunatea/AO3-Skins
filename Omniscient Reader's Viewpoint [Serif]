@@ -2117,6 +2117,10 @@ div#modal {
 
 /*---------- PROFILE ----------*/
 
+h2.heading a {
+  border-bottom: none;
+}
+
 .home .header h2 {
   margin-left: 100px;
 }
