@@ -441,7 +441,7 @@ form.search input[type=text] {
   left: 1em;
   right: 1em;
   top: 4em;
-  background: #e4e0dd !important;
+  background: #ddd !important;
   border: 2px solid;
   border-radius: 10px;
 }
