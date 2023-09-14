@@ -2196,7 +2196,7 @@ h2.heading a {
   margin: 0.5em auto;
   line-height: 1.5;
   font-family: Avenir, Helvetica, Arial, sans-serif !important;
-  font-size: 1em !important;
+  font-size: 1.1em !important;
   padding: 0;
   text-align: justify !Important;
 }
