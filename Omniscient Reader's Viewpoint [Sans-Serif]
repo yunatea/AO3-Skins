@@ -1025,7 +1025,7 @@ input[type="submit"]:hover {
 }
 
 .actions * {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 
