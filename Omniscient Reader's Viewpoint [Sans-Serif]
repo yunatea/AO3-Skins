@@ -1008,7 +1008,7 @@ li.chapter.entire, li.chapter.next, li.chapter, li.mark, li#show_comments_link_t
   margin-bottom: 10px !important;*/
 }
 
-input[type="submit"] {
+input[type="submit"], input[type="submit"]:focus {
   color: #000 !important;
   font-size: 0.95em !important;
   font-weight: 600;
