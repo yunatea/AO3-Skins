@@ -1269,6 +1269,10 @@ span.disabled {
   display: none !important;
 }
 
+ol.index.group {
+    font-family: Avenir, Helvetica, Arial, sans-serif !important;
+}
+
 
 /*---------- LISTBOX ----------*/
 
