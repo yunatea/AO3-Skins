@@ -4,7 +4,7 @@
 #workskin {
   text-align: justify;
   margin: auto !important;
-  font-size: 1.125em !important
+  font-size: 1.2em !important
 }
 
 blockquote.meta dl.stats {
@@ -166,7 +166,6 @@ h1, h2, h3, h4, h5, h6, .heading {
   font-weight: 600;
   word-wrap: break-word !important;
 }
-}
 
 h2 {
   font-size: 2em;
@@ -177,6 +176,7 @@ h2.collections {
 }
 
 h3 {
+  font-size: 1.1em;
   margin: 1em 0 0.5375em 0;
 }
 
@@ -1141,6 +1141,7 @@ div.preface .summary, div.preface .notes {
   border-radius: 10px !important;
   padding: 0 15px 7px;
   margin: 30px 0 30px 0!important;
+  font-size: 0.9em !important;
 }
 
 div.preface .notes {
