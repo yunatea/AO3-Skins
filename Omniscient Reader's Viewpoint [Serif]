@@ -611,13 +611,9 @@ span.current {
   width: auto;
 }
 
-#main, #main.dashboard {
-    margin: auto !important;
-}
-
-#main.dashboard {
+/* #main.dashboard {
     margin: 0.5em auto 1em 16em;
-}
+} */
 
 #dashboard ul {
   background: transparent;
