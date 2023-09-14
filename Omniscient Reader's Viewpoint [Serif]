@@ -899,7 +899,7 @@ li.warnings + li.freeforms:before, li.relationships + li.freeforms:before, li.ch
 }
 
 .blurb ul.series {
-    margin: 0 0 20px;
+    margin: 0 0 20px !important;
 }
 
 #workskin .notes, dl.meta, .reading h4.viewed, none !important .user, .comment .posted, .comment .edited {
