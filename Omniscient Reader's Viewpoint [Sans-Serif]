@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 
+.scroll-disabled {
+    position: fixed;
+    width: 100%;
+    overflow-y: scroll;
+}
+
 #workskin {
   text-align: justify;
   margin: auto !important;
@@ -756,7 +762,7 @@ h4.viewed.heading {
 h5.fandoms.heading {
   color: #000;
   font-weight: 500;
-  margin: 10px0 0 65px !important;
+  margin: 10px 0 0 65px !important;
   word-wrap: break-word !important;
 }
 
@@ -1046,8 +1052,11 @@ dl.meta, li.comment {
   width: 27%;
 }
 
+/*SCROLLING TAGS*/
 ul.commas {
   padding-top: 5px;
+  overflow-y: auto;
+  max-height: 13em;
 }
 
 dd.language {
