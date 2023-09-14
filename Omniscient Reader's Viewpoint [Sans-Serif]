@@ -37,6 +37,10 @@ dl.stats dt {
   top: 30px;
 }
 
+.datetime select {
+    width: auto !important;
+}
+
 li.collection dl.stats dt, li.series dl.stats dt, dl.series dl.stats dt {
   display: inline-block !important;
 }
@@ -907,17 +911,17 @@ li.warnings + li.freeforms:before, li.relationships + li.freeforms:before, li.ch
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
-#workskin .preface.group .byline.heading a {
+/*#workskin .preface.group .byline.heading a {
   background-size: contain;
-  color: #fff;
-  font-family: "Trebuchet MS", Calibri, sans-serif;
+  color: #000;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-text-stroke-width: .5px;
   -webkit-text-stroke-color: black;
-}
+}*/
 
 #workskin h2 {
   font-size: 2.7em;
-  color: #fff;
+  color: #000;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
@@ -1400,7 +1404,7 @@ thead, tfoot, tfoot td, th, tr:hover, col.name, input, textarea, #modal .content
 
 textarea {
   width: -webkit-fill-available;
-  background: #7ca1d922 !important;
+  background: #7ca1d933 !important;
   border-radius: 15px !important;
   padding: 15px;
   margin-top: 15px;
@@ -1939,6 +1943,16 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 
 /*---------- WORK ----------*/
 
+#main .verbose legend {
+  color: #525252 !important;
+  background: #f2f2f200 !important;
+  font-size: 1.3em !important;
+  font-family: Avenir, Helvetica, Arial, sans-serif !important;
+  font-weight: 600;
+  margin: 0.5em 1em !important;
+  padding-bottom: 8px;
+}
+
 .verbose fieldset {
   border: 2.5px dashed #525252;
   border-radius: 20px;
@@ -1947,20 +1961,10 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 }
 
 dd fieldset {
-  background: #7ca1d922 !important;
-  border: none !important;
+  background: #7ca1d900 !important;
+  border: 2.5px solid !important;
   border-radius: 15px !important;
   box-shadow: none !important;
-}
-
-#main .verbose legend {
-  color: #000;
-  background: #f2f2f200 !important;
-  font-size: 1.3em !important;
-  font-family: Avenir, Helvetica, Arial, sans-serif !important;
-  font-weight: 600;
-  margin: 0.5em 1em !important;
-  padding-bottom: 25px;
 }
 
 form dt, dt.rating.required, label, .notes, dt.permissions.comments /*dt.warning.required, dt.fandom.required, dt.category, dt.relationship, dt.character, dt.freeform, dt.title.required, dt.byline.coauthors, dt.summary, dt.notes, dt.language.required, dt.backdate, dt.skin, dt.required*/ {
@@ -2011,7 +2015,7 @@ form p {
     padding: 0;
 }
 
-textarea#work_summary, textarea#content, textarea#skin_css, textarea#collection_collection_profile_attributes_faq, textarea#collection_collection_profile_attributes_intro, textarea#collection_collection_profile_attributes_rules, textarea#collection_collection_profile_attributes_assignment_notification, textarea#collection_collection_profile_attributes_gift_notification, textarea#series_summary, textarea#chapter_summary, textarea#series_series_notes, textarea#chapter_notes, textarea#work_notes, textarea#work_endnotes, {
+textarea#work_summary, textarea#content, textarea#skin_css, textarea#collection_collection_profile_attributes_faq, textarea#collection_collection_profile_attributes_intro, textarea#collection_collection_profile_attributes_rules, textarea#collection_collection_profile_attributes_assignment_notification, textarea#collection_collection_profile_attributes_gift_notification, textarea#series_summary, textarea#chapter_summary {
   border: none !important;
   background: #d7c8e344 !important;
   border-radius: 15px !important;
@@ -2177,7 +2181,7 @@ div#modal {
   margin: 0.5em auto;
   line-height: 1.5;
   font-family: Avenir, Helvetica, Arial, sans-serif !important;
-  font-size: 0.95em !important;
+  font-size: 1em !important;
   padding: 0;
   text-align: justify !Important;
 }
