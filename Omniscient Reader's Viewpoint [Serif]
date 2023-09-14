@@ -1993,7 +1993,7 @@ dd fieldset {
 
 form dt, dt.rating.required, label, .notes, dt.permissions.comments /*dt.warning.required, dt.fandom.required, dt.category, dt.relationship, dt.character, dt.freeform, dt.title.required, dt.byline.coauthors, dt.summary, dt.notes, dt.language.required, dt.backdate, dt.skin, dt.required*/ {
   color: #000;
-  font-size: 0.9em !important;
+  font-size: 0.95em !important;
   font-family: Avenir, Helvetica, Arial, sans-serif !important;
   font-weight: 500;
 }
