@@ -569,7 +569,7 @@ form.search input[type=text] {
   border-radius:0 !important;
   border: 2px solid #0000 !important;
   line-height: 1.5 !important;
-  padding: 0.2em 1em 0 !important;
+  padding: 0 1em 0 !important;
 }
 
 #dashboard a:hover {
