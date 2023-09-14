@@ -1219,7 +1219,7 @@ body, #main.error, #main.slow, #main.maintenance, .required .autocomplete, .auto
   background: #f2f2f2 !important;
   box-shadow: none;
   padding: 20px;
-  margin: 40px 40px 20px;
+  margin: 40px 3.5% 20px;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
