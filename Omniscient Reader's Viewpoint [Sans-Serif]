@@ -1754,7 +1754,7 @@ label {
 
 .filters .expander, .filters .expanded .expander, .filters .expander:focus {
   padding: 5px 0;
-  font-size: 0.9em !important;
+  font-size: 1em !important;
   background: none;
   font-family: Avenir, Helvetica, Arial, sans-serif !important;
   margin: 2px 0 0 0 !important;
