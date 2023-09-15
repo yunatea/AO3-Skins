@@ -1391,6 +1391,12 @@ li.blurb, .blurb .blurb {
   margin: 20px 0 !important;
 }
 
+.userstuff blockquote {
+    background: #fff0 !important;
+    border-radius: 0px !important;
+    border-left: 2px solid #000 !important;
+}
+
 .blurb p.status .AO3E--icon {
   height: 25px !important;
 }
