@@ -629,8 +629,8 @@ span.current {
 }
 }*/
 
-#main.dashboard {
-    margin: 0.5em auto 1em 16em;
+div#collection-page {
+    margin-left: 2%;
 }
 
 #dashboard ul {
