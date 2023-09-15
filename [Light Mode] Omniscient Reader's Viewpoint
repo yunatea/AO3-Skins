@@ -717,8 +717,9 @@ a.tag:hover, a.tag:visited:hover, a.tag:link:hover, span.action:hover, span.acti
 }*/
 
 .warnings a:before, .relationships a:before, .characters a:before, .freeforms a:before {
-  content: " ⬫ ";
-  padding: 0 1.5px 00;
+  content: " ⬪ ";
+  padding: 0;
+  background: #f2f2f2 !important;
 }
 
 .warnings a:before {
@@ -837,6 +838,7 @@ a:active, a:focus, button:focus {
 a.tag:visited:hover, a.tag:hover {
   color: #000 !important;
   background: #f2f2f200 !important;
+  border-radius: 0;
 }
 
 .tags li.relationships a.tag:hover {
@@ -846,7 +848,7 @@ a.tag:visited:hover, a.tag:hover {
 
 .tags li.characters a.tag:hover {
   background-color: #d7c8e355 !important;
-  border:0 !important;
+  border: 0 !important;
 }
 
 .tags li.freeforms a.tag:hover {
@@ -886,24 +888,24 @@ ul.tags li.warnings:first-child:before {
 }
 
 .blurb .fandoms::before {
-  content: "Fandom ₊˚ପ";
+  content: "Fandom ‧₊˚☾";
   color: #7ca1d9;
 }
 
 li.warnings + li.relationships:before {
-  content: "\a Relationships ₊˚ପ";
+  content: "\a Relationships ‧₊˚☾";
   color: #bec3ea;
   white-space: pre-line;
 }
 
 li.warnings + li.characters:before, li.relationships + li.characters:before {
-  content: "\a Characters ₊˚ପ";
+  content: "\a Characters ‧₊˚☾";
   color: #d7c8e9;
   white-space: pre-line;
 }
 
 li.warnings + li.freeforms:before, li.relationships + li.freeforms:before, li.characters + li.freeforms:before {
-  content: "\a Tropes ₊˚ପ";
+  content: "\a Tropes ‧₊˚☾";
   color: #dfc3e3;
   white-space: pre-line;
 }
@@ -917,7 +919,7 @@ li.warnings + li.freeforms:before, li.relationships + li.freeforms:before, li.ch
 }/*
 
 /*.blurb*/ ul.series:before {
-    content: "૪" !important;
+    content: "✧" !important;
     color: #e7b5d3;
     font-family: Avenir, Helvetica, Arial, sans-serif;
     font-weight: 600;
@@ -1110,7 +1112,7 @@ dt.freeform.tags, dd.freeform.tags a.tag:before {
 }
 
 dd.rating.tags a.tag:before, dd.warning.tags a.tag:before, dd.category.tags a.tag:before, dd.fandom.tags a.tag:before, dd.relationship.tags a.tag:before, dd.character.tags a.tag:before, dd.freeform.tags a.tag:before, dd.AO3E.track-works-meta-notes a.tag:before {
-  content: " ⬫ ";
+  content: " ⬪ ";
   font-weight: 500;
   color: #525252;
 }
@@ -1344,7 +1346,7 @@ a#bookmark_form_trigger_for_11568582, li#add_collection_link, li.share li.share 
 }
 
 ul.meta.tags.commas a.tag:before, ul.meta.commas a:link:before {
-    content: " ⬫ ";
+    content: " ⬪ ";
 }
 
 
@@ -2004,7 +2006,7 @@ dd fieldset {
 
 form dt, dt.rating.required, label, .notes, dt.permissions.comments /*dt.warning.required, dt.fandom.required, dt.category, dt.relationship, dt.character, dt.freeform, dt.title.required, dt.byline.coauthors, dt.summary, dt.notes, dt.language.required, dt.backdate, dt.skin, dt.required*/ {
   color: #000;
-  font-size: 0.95em !important;
+  font-size: 0.9em !important;
   font-family: Avenir, Helvetica, Arial, sans-serif !important;
   /*font-weight: 500;*/
 }
