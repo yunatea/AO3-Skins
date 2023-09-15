@@ -1343,7 +1343,7 @@ a#bookmark_form_trigger_for_11568582, li#add_collection_link, li.share li.share 
   font-size: 0.95em;
 }
 
-ul.meta.tags.commas a.tag:before {
+ul.meta.tags.commas a.tag:before, ul.meta.commas a:link:before {
     content: " ⬫ ";
 }
 
