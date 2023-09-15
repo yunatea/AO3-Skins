@@ -1146,7 +1146,8 @@ dd.rating.tags a.tag:before, dd.warning.tags a.tag:before, dd.category.tags a.ta
 .preface h3 {
   background: 0 0;
   border-bottom: 1px solid #bebebe00;
-  font-size 1.1em !important;
+  font-size: 1.1em !important;
+  margin: 1em 0 0.5375em 0 !important;
 }
 
 div#chapter-stats {
@@ -2065,6 +2066,7 @@ fieldset#co-authors-options {
 
 ul.autocomplete {
   background: #fff0 !important;
+  margin-top: 10px;
 }
 
 form p {
