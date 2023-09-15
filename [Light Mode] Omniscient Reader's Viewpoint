@@ -631,7 +631,7 @@ span.current {
 }
 }*/
 
-div#collection-page {
+div#collection-page, verbose.post.collection {
     margin-left: 2%;
 }
 
