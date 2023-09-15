@@ -177,7 +177,7 @@ h1, h2, h3, h4, h5, h6, .heading {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.6em;
 }
 
 h2.collections {
@@ -955,7 +955,7 @@ li.warnings + li.freeforms:before, li.relationships + li.freeforms:before, li.ch
 }*/
 
 #workskin h2 {
-  font-size: 2em;
+  font-size: 1.6em;
   color: #000;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
