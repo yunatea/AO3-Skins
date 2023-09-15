@@ -1259,10 +1259,9 @@ body, #main.error, #main.slow, #main.maintenance, .required .autocomplete, .auto
   padding: 0 !important;
 }
 
-.autocomplete .dropdown ul li:hover {
-  background: #f2f2f2 !important;
+.autocomplete .dropdown ul li:hover, .autocomplete .dropdown li.selected {
+  background: #52525222 !important;
   color: #525252;
-
 }
 
 #feedback {
