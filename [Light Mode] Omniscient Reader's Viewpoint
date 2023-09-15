@@ -43,8 +43,10 @@ dl.stats dt {
   font-weight: 600;
   font-size: 0.8em;
   color: #525252;
-  position: relative;
-  top: 30px;
+}
+
+.blurb .datetime {
+  right: 0;
 }
 
 .datetime select {
@@ -775,7 +777,7 @@ h4.viewed.heading {
 h5.fandoms.heading {
   color: #000;
   font-weight: 500;
-  margin: 10px 0 0 65px !important;
+  margin: 10px 65px 0 65px !important;
   word-wrap: break-word !important;
   max-height: 5.3em;
   overflow-y: auto;
@@ -1393,7 +1395,8 @@ li.blurb, .blurb .blurb {
 }
 
 .bookmark p.status {
-  right: 20px;
+  right: 2em;
+  margin-top: 0;
 }
 
 p.type {
