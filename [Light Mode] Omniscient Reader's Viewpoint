@@ -1395,7 +1395,7 @@ li.blurb, .blurb .blurb {
 }
 
 .bookmark p.status {
-  right: 2em;
+  right: 2%;
   margin-top: 0;
 }
 
