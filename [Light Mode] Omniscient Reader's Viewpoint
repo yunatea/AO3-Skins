@@ -619,9 +619,19 @@ span.current {
   width: auto;
 }
 
-/* #main.dashboard {
+/*@media only screen and (max-width: 62em), handheld {
+#main, #main.dashboard {
+    float: none;
+    margin: auto !important;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    width: auto;
+}
+}*/
+
+#main.dashboard {
     margin: 0.5em auto 1em 16em;
-} */
+}
 
 #dashboard ul {
   background: transparent;
