@@ -1770,8 +1770,8 @@ label {
 }
 
 .filters .expander::before, .filters .expanded .expander::before {
-  content: "#";
-  margin-right: 5px;
+  content: "˗ˏˋ✩";
+  margin-right: 0;
   color: #000;
   font-weight: 500;
   padding: 0 3px !important;
