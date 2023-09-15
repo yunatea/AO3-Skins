@@ -301,7 +301,7 @@ a:visited:hover, a.link:visited:hover {
   position: relative !important;
   right: -130%;
   top: 15%;
-  border:0 solid #0000 !important;
+  border: 0 solid #0000 !important;
 }
 
 #header .primary a {
@@ -641,7 +641,7 @@ div#collection-page {
 }
 
 #dashboard .secondary {
-  background-color: #fff;
+  background-color: #fff0;
   box-shadow: none;
 }
 
@@ -665,6 +665,12 @@ body, #main.error, #main.slow, #main.maintenance, .required .autocomplete, .auto
 fieldset, fieldset dl dl, fieldset fieldset fieldset, fieldset fieldset dl dl, dd.hideme, form blockquote.userstuff {
   box-shadow: none !important;
   padding: 20px !important;
+}
+
+fieldset fieldset, fieldset dl dl, form blockquote.userstuff {
+    background: #fff0;
+    border: none;
+    border-top: 2px solid #525252;
 }
 
 
@@ -1829,7 +1835,7 @@ label {
 
 filters .submit input {
   color: #e0849b;
-  background: #fff;
+  background: #f2f2f2;
   box-shadow: none;
 }
 
@@ -2244,30 +2250,23 @@ p, li, dd, hr {
   margin: 0 0 15px 0;
 }
 
-.flash,
-.notice {
-  background-color: #fff;
-  color: #67826e;
-  border-radius: 10px;
-}
-
 form .notice, ul.notes, .caution, span.html-notes {
   background: #ddd0 !important;
   color: #000;
   border-color: #fff0;
-  padding:0 20px;
+  padding: 0 20px;
   font-size: 0.9em !important;
   font-family: monospace;
   box-shadow: none !important;
 }
 
 span.html-notes, span.rtf-notes {
-  padding:0 10px !important;
+  padding: 0 10px !important;
 }
 
 .notice, .comment_notice, .kudos_notice, .caution, .error, .comment_error, .kudos_error, .alert.flash {
   background: #52525222 !important;
-  border: 2px solid#525252;
+  border: 2px solid #525252;
   margin: 0.75em auto 1.5em !important;
   padding: 0.5em 1em !important;
   clear: right;
