@@ -57,9 +57,9 @@ li.collection dl.stats dt, li.series dl.stats dt, dl.series dl.stats dt {
 
 dl.stats dd {
   font-family: monospace !important;
-  font-size: 1em !important;
+  font-size: 1.1em !important;
   padding: 0 !important;
-  margin: 0 15px auto 0;
+  margin: 0 15px auto 0 !important;
 }
 
 dl.stats dd.kudos::before {
@@ -792,17 +792,17 @@ h5.fandoms.heading {
 
 .tags li.relationships:nth-of-type(3n+1) a.tag, .tags li.relationships:nth-of-type(3n+2) a.tag, .tags li.relationships:nth-of-type(3n+3) a.tag {
   background-color: #bec3ea00 !important;
-  padding: 0 5px 0 0;
+  padding: 0;
 }
 
 .tags li.characters:nth-of-type(3n+1) a.tag, .tags li.characters:nth-of-type(3n+2) a.tag, .tags li.characters:nth-of-type(3n+3) a.tag {
   background-color: #d7c8e300 !important;
-  padding: 0 5px 0 0;
+  padding: 0;
 }
 
-.tags li.freeforms:nth-of-type(3n+1) a.tag, .tags li.freeforms:nth-of-type(3n+2) a.tag ,.tags li.freeforms:nth-of-type(3n+3) a.tag {
+.tags li.freeforms:nth-of-type(3n+1) a.tag, .tags li.freeforms:nth-of-type(3n+2) a.tag , .tags li.freeforms:nth-of-type(3n+3) a.tag {
   background-color: #dfc3e300 !important;
-  padding: 0 5px 0 0;
+  padding: 0;
 }
 
 a:active, a:focus, button:focus {
@@ -855,7 +855,7 @@ a.tag:visited:hover, a.tag:hover {
 }
 
 ul.tags li.warnings, ul.tags li.relationships, ul.tags li.characters, ul.tags li.freeforms {
-  float: left !important;
+  /*float: left !important;*/
   margin: 0;
   border-radius: 15px;
   padding: 0;
@@ -891,18 +891,21 @@ ul.tags li.warnings:first-child:before {
 }
 
 li.warnings + li.relationships:before {
-  content: "Relationships ₊˚ପ";
+  content: "\a Relationships ₊˚ପ";
   color: #bec3ea;
+  white-space: pre-line;
 }
 
 li.warnings + li.characters:before, li.relationships + li.characters:before {
-  content: "Characters ₊˚ପ";
+  content: "\a Characters ₊˚ପ";
   color: #d7c8e9;
+  white-space: pre-line;
 }
 
 li.warnings + li.freeforms:before, li.relationships + li.freeforms:before, li.characters + li.freeforms:before {
-  content: "Tropes ₊˚ପ";
+  content: "\a Tropes ₊˚ପ";
   color: #dfc3e3;
+  white-space: pre-line;
 }
 
 /*li.blurb blockquote p:first-child::before {
@@ -1059,6 +1062,7 @@ dl.meta, li.comment {
 /*SCROLLING TAGS*/
 ul.commas {
   padding-top: 5px;
+  overflow-x: clip;
   overflow-y: auto;
   max-height: 13em;
 }
