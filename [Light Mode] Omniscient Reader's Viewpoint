@@ -1812,6 +1812,7 @@ label {
   border-radius: 20px !important;
   padding: 7% !important;
   margin: 0;
+  min-width: fit-content;
 }
 
 filters .submit input {
