@@ -631,7 +631,7 @@ span.current {
 }
 }*/
 
-div#collection-page, .verbose.post.collection, .collection.home.profile, .collection.picture.index.group, .alphabet.fandom.index.group.collection, .work.index.group, ul.pseud.index.group {
+div#collection-page, .verbose.post.collection, .collection.home.profile, .collection.picture.index.group, .alphabet.fandom.index.group.collection, ul.pseud.index.group {
     margin-left: 2%;
     max-width: -webkit-fill-available;
 }
