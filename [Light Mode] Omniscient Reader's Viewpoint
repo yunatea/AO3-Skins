@@ -1346,11 +1346,12 @@ ol.index.group {
 
 /*___ BOOKMARK INFO ___*/
 
-.own.user.module.group {
-  border-radius: 15px !important;
-  background: #7ca1d933 !important;
-  padding: 15px !important;
-  margin-top: 20px;
+.own.user.module.group, ul.bookmark.index.group {
+    border-radius: 15px !important;
+    background: #7ca1d933 !important;
+    padding: 15px !important;
+    margin-top: 20px;
+    width: -webkit-fill-available;
 }
 
 .bookmark .actions {
