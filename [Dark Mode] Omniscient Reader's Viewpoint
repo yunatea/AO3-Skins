@@ -943,7 +943,7 @@ li.warnings + li.freeforms:before, li.relationships + li.freeforms:before, li.ch
 
 /*.blurb*/ ul.series:before {
     content: "✧" !important;
-    color: #d8cec5;
+    color: #c1b1a8;
     font-family: Avenir, Helvetica, Arial, sans-serif;
     font-weight: 600;
 }
@@ -1131,7 +1131,7 @@ dt.character.tags, dd.character.tags a.tag:before {
 }
 
 dt.freeform.tags, dd.freeform.tags a.tag:before {
-  color: #d8cec5 !important;
+  color: #c1b1a8 !important;
 }
 
 dd.rating.tags a.tag:before, dd.warning.tags a.tag:before, dd.category.tags a.tag:before, dd.fandom.tags a.tag:before, dd.relationship.tags a.tag:before, dd.character.tags a.tag:before, dd.freeform.tags a.tag:before, dd.AO3E.track-works-meta-notes a.tag:before {
@@ -1389,8 +1389,8 @@ li.blurb, .blurb .blurb {
 }
 
 .blurb blockquote {
-  background: #d8cec533;
-  border:0 solid #d8cec5;
+  background: #c1b1a833;
+  border:0 solid #c1b1a8;
   border-radius: 15px;
   font-size: 0.95em !important;
   padding: 15px;
