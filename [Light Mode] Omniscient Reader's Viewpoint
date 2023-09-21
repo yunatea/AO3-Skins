@@ -248,7 +248,7 @@ a:visited:hover, a.link:visited:hover {
 #header .logo {
   width: 0;
   height: 0;  
-  background: url(https://cdn.discordapp.com/attachments/1150012974614970428/1150013058052272190/Cute.png) no-repeat;
+  background: url(https://cdn.discordapp.com/attachments/1150012974614970428/1154460828028907582/Cute.png) no-repeat;
   padding: 24% 67%;
   background-size: contain;
 }
