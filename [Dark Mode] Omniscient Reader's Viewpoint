@@ -671,11 +671,18 @@ fieldset fieldset, fieldset dl dl, form blockquote.userstuff {
     border-top: 2px solid #adadad;
 }
 
+body, .toggled form, .dynamic form, .secondary, .dropdown {
+    background: #222 !important;
+}
+
+.secondary {
+    box-shadow: none !important;
+}
 
 /*-------------- FILTER -------------*/
 
 select, select:focus {
-  background: #adadad22;
+  background: #0d0d0d;
   color: #fff;
   font-family: monospace;
   font-weight: 600;
@@ -2089,6 +2096,7 @@ textarea#work_summary, textarea#content, textarea#skin_css, textarea#collection_
   border-radius: 15px !important;
   padding: 15px !important;
   width: -webkit-fill-available;
+  color: #fff !important;
 }
 
 textarea#content, textarea#skin_css, textarea#collection_collection_profile_attributes_faq, textarea#collection_collection_profile_attributes_intro, textarea#collection_collection_profile_attributes_rules, textarea#collection_collection_profile_attributes_assignment_notification, textarea#collection_collection_profile_attributes_gift_notification {
