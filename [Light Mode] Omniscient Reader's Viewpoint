@@ -920,7 +920,7 @@ li.warnings + li.relationships:before {
 
 li.warnings + li.characters:before, li.relationships + li.characters:before {
   content: "\a Characters ‧₊˚☾";
-  color: #d7c8e9;
+  color: #d7c8e3;
   white-space: pre-line;
 }
 
