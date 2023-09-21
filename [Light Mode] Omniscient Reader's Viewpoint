@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
-
 .scroll-disabled {
     position: fixed;
     width: 100%;
