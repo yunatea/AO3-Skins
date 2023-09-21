@@ -1086,7 +1086,7 @@ ul.commas {
   padding-top: 5px;
   overflow-x: clip;
   overflow-y: auto;
-  max-height: 13em;
+  max-height: 10.5em;
 }
 
 dd.language {
