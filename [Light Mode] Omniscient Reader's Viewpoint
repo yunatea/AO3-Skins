@@ -671,6 +671,10 @@ fieldset fieldset, fieldset dl dl, form blockquote.userstuff {
     border-top: 2px solid #525252;
 }
 
+.secondary {
+    box-shadow: none !important;
+}
+
 
 /*-------------- FILTER -------------*/
 
