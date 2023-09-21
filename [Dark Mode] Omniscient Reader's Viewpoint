@@ -672,7 +672,7 @@ fieldset fieldset, fieldset dl dl, form blockquote.userstuff {
 }
 
 body, .toggled form, .dynamic form, .secondary, .dropdown {
-    background: #222 !important;
+    background: #0d0d0d !important;
 }
 
 .secondary {
@@ -682,7 +682,7 @@ body, .toggled form, .dynamic form, .secondary, .dropdown {
 /*-------------- FILTER -------------*/
 
 select, select:focus {
-  background: #0d0d0d;
+  background: #222;
   color: #fff;
   font-family: monospace;
   font-weight: 600;
