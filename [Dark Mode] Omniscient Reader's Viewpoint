@@ -751,15 +751,15 @@ a.tag:hover, a.tag:visited:hover, a.tag:link:hover, span.action:hover, span.acti
 }
 
 .relationships a:before {
-  color: #bec3ea;
+  color: #5d7098;
 }
 
 .characters a:before {
-  color: #d7c8e3;
+  color: #a5aac7;
 }
 
 .freeforms a:before {
-  color: #dfc3e3;
+  color: #d3d1dc;
 }
 
 .relationships a:before:hover, .characters a:before:hover, .freeforms a:before:hover {
@@ -799,7 +799,7 @@ h5.fandoms.heading {
 }
 
 .tags li.fandoms:nth-of-type(3n+1) a.tag, .tags li.fandoms:nth-of-type(3n+2) a.tag, .tags li.fandoms:nth-of-type(3n+3) a.tag {
-  background-color: #bec3ea00;
+  background-color: #5d709800;
   border-bottom:0 !important;
 }
 
@@ -808,24 +808,24 @@ h5.fandoms.heading {
 }*/
 
 .tags li.warnings a.tag {
-  background-color: #bec3ea00;
+  background-color: #5d709800;
   border-radius:0 !important;
   border-bottom: 2px solid #fff0 !important;
   padding-right: 5px !important;
 }
 
 .tags li.relationships:nth-of-type(3n+1) a.tag, .tags li.relationships:nth-of-type(3n+2) a.tag, .tags li.relationships:nth-of-type(3n+3) a.tag {
-  background-color: #bec3ea00 !important;
+  background-color: #5d709800 !important;
   padding: 0;
 }
 
 .tags li.characters:nth-of-type(3n+1) a.tag, .tags li.characters:nth-of-type(3n+2) a.tag, .tags li.characters:nth-of-type(3n+3) a.tag {
-  background-color: #d7c8e300 !important;
+  background-color: #a5aac700 !important;
   padding: 0;
 }
 
 .tags li.freeforms:nth-of-type(3n+1) a.tag, .tags li.freeforms:nth-of-type(3n+2) a.tag , .tags li.freeforms:nth-of-type(3n+3) a.tag {
-  background-color: #dfc3e300 !important;
+  background-color: #d3d1dc00 !important;
   padding: 0;
 }
 
@@ -837,7 +837,7 @@ a:active, a:focus, button:focus {
 /*___ TAGS HOVER ___*/
 
 .tags li.fandoms a.tag:hover, .tags li.fandoms a.tag:visited:hover {
-  background: #7ca1d944 !important;
+  background: #36456c44 !important;
   color: #fff !important;
   border-bottom:0 !important;
 }
@@ -865,17 +865,17 @@ a.tag:visited:hover, a.tag:hover {
 }
 
 .tags li.relationships a.tag:hover {
-  background-color: #bec3ea55 !important;
+  background-color: #5d709855 !important;
   border:0 !important;
 }
 
 .tags li.characters a.tag:hover {
-  background-color: #d7c8e355 !important;
+  background-color: #a5aac755 !important;
   border: 0 !important;
 }
 
 .tags li.freeforms a.tag:hover {
-  background-color: #dfc3e355 !important;
+  background-color: #d3d1dc55 !important;
   border:0 !important;
 }
 
@@ -912,12 +912,12 @@ ul.tags li.warnings:first-child:before {
 
 .blurb .fandoms::before {
   content: "Fandom ‧₊˚☾";
-  color: #7ca1d9;
+  color: #36456c;
 }
 
 li.warnings + li.relationships:before {
   content: "\a Relationships ‧₊˚☾";
-  color: #bec3ea;
+  color: #5d7098;
   white-space: pre-line;
 }
 
@@ -929,7 +929,7 @@ li.warnings + li.characters:before, li.relationships + li.characters:before {
 
 li.warnings + li.freeforms:before, li.relationships + li.freeforms:before, li.characters + li.freeforms:before {
   content: "\a Tropes ‧₊˚☾";
-  color: #dfc3e3;
+  color: #d3d1dc;
   white-space: pre-line;
 }
 
@@ -943,7 +943,7 @@ li.warnings + li.freeforms:before, li.relationships + li.freeforms:before, li.ch
 
 /*.blurb*/ ul.series:before {
     content: "✧" !important;
-    color: #e7b5d3;
+    color: #d8cec5;
     font-family: Avenir, Helvetica, Arial, sans-serif;
     font-weight: 600;
 }
@@ -1115,23 +1115,23 @@ dt.rating.tags, dt.collections, dt.AO3E.track-works-meta-notes, dt.language, dt.
 }
 
 dt.category.tags, dd.category.tags a.tag:before {
-  color: #7ca1d9 !important;
+  color: #36456c !important;
 }
 
 dt.fandom.tags, dd.fandom.tags a.tag:before {
-  color: #bec3ea !important;
+  color: #5d7098 !important;
 }
 
 dt.relationship.tags, dd.relationship.tags a.tag:before {
-  color: #d7c8e3 !important;
+  color: #a5aac7 !important;
 }
 
 dt.character.tags, dd.character.tags a.tag:before {
-  color: #dfc3e3 !important;
+  color: #d3d1dc !important;
 }
 
 dt.freeform.tags, dd.freeform.tags a.tag:before {
-  color: #e7b5d3 !important;
+  color: #d8cec5 !important;
 }
 
 dd.rating.tags a.tag:before, dd.warning.tags a.tag:before, dd.category.tags a.tag:before, dd.fandom.tags a.tag:before, dd.relationship.tags a.tag:before, dd.character.tags a.tag:before, dd.freeform.tags a.tag:before, dd.AO3E.track-works-meta-notes a.tag:before {
@@ -1353,7 +1353,7 @@ ol.index.group {
 
 .own.user.module.group, li.own.user.short.blurb.group {
     border-radius: 15px !important;
-    background: #7ca1d933 !important;
+    background: #36456c33 !important;
     padding: 15px !important;
     margin-top: 20px;
     width: -webkit-fill-available;
@@ -1389,8 +1389,8 @@ li.blurb, .blurb .blurb {
 }
 
 .blurb blockquote {
-  background: #e7b5d333;
-  border:0 solid #e7b5d3;
+  background: #d8cec533;
+  border:0 solid #d8cec5;
   border-radius: 15px;
   font-size: 0.95em !important;
   padding: 15px;
@@ -1472,7 +1472,7 @@ thead, tfoot, tfoot td, th, tr:hover, col.name, input, textarea, #modal .content
 
 textarea {
   width: -webkit-fill-available;
-  background: #7ca1d933 !important;
+  background: #36456c33 !important;
   border-radius: 15px !important;
   padding: 15px;
   margin-top: 15px;
@@ -1487,13 +1487,13 @@ textarea {
 }
 
 .comment fieldset textarea {
-  background: #bec3ea33 !important;
-  border:0 solid #bec3ea !important;
+  background: #5d709833 !important;
+  border:0 solid #5d7098 !important;
 }
 
 .comment fieldset textarea, .comment .userstuff {
-  background: #dfc3e333;
-  border:0 solid #dfc3e3;
+  background: #d3d1dc33;
+  border:0 solid #d3d1dc;
   border-radius: 15px !important;
   padding: 15px;
   margin: 20px 0 !important;
@@ -2030,7 +2030,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 }
 
 dd fieldset {
-  background: #7ca1d900 !important;
+  background: #36456c00 !important;
   border: 2.5px solid !important;
   border-radius: 15px !important;
   box-shadow: none !important;
@@ -2092,7 +2092,7 @@ form p {
 
 textarea#work_summary, textarea#content, textarea#skin_css, textarea#collection_collection_profile_attributes_faq, textarea#collection_collection_profile_attributes_intro, textarea#collection_collection_profile_attributes_rules, textarea#collection_collection_profile_attributes_assignment_notification, textarea#collection_collection_profile_attributes_gift_notification, textarea#series_summary, textarea#chapter_summary {
   border: none !important;
-  background: #d7c8e344 !important;
+  background: #a5aac744 !important;
   border-radius: 15px !important;
   padding: 15px !important;
   width: -webkit-fill-available;
@@ -2172,7 +2172,7 @@ div#modal {
   padding: 10px;
   margin: 10px;
   border-radius: 15px;
-  background: #7ca1d933;
+  background: #36456c33;
 }
 
 #modal .footer .action.modal-closer {
