@@ -2036,11 +2036,16 @@ form dt, dt.rating.required, label, .notes, dt.permissions.comments /*dt.warning
   /*font-weight: 500;*/
 }
 
+form dd.required {
+    color: #adadad;
+}
+
 input, input[type="text" i] {
   border-radius:0 !important;
   box-shadow: none !important;
   border-bottom: 2px solid #fff !important;
   border: none;
+  color: #fff;
   background: #fff0 !important;
 }
 
