@@ -133,19 +133,19 @@ dd.kudos-hits-ratio.AO3E::before, dd.kudos-hits-ratio::before {
   float: left;
   border-radius:0;
   border-top: 5px solid #adadad !important;
-  background: #0d0d0d;
+  background: #222;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 #footer h4 {
-  background: #0d0d0d;
+  background: #222;
   color: #fff !important;
   border-radius: 10px;
   text-transform: uppercase;
 }
 
 #footer .menu {
-  background: #0d0d0d;
+  background: #222;
   color: #fcf67e !important;
   border-radius:0;
   padding:0;
@@ -257,14 +257,14 @@ a:visited:hover, a.link:visited:hover {
 /*---------- HEADER ----------*/
 
 #outer.wrapper {
-  background-color: #222 !important;
+  background-color: #0d0d0d !important;
   padding-top: 0em;
   border-radius:0 !important;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 #header {
-  background-color: #0d0d0d;
+  background-color: #222;
   border-radius:0;
   border-top: 5px solid #adadad00;
   border-bottom: 5px solid #adadad;
@@ -328,7 +328,7 @@ thead, tfoot, tfoot td, th, tr:hover, col.name, textarea, #modal .content,  .act
 
 thead, tfoot, tfoot td, th, tr:hover, col.name, textarea, #modal .content, .actions a, .action, .actions input, button, .current, .actions label, span.unread, .replied, .listbox, .fieldset fieldset.listbox, span.claimed, .picture .header, .bookmark .user {
   border-color: #0000 !important;
-  background: #222;
+  background: #0d0d0d;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   border-radius:0 !important;
   margin-bottom: 10px;
@@ -349,7 +349,7 @@ thead, tfoot, tfoot td, th, tr:hover, col.name, textarea, #modal .content, .acti
 
 #header .primary .dropdown a:focus{
   color: #adadad !important;
-  background: #0d0d0d00 !important;
+  background: #2220 !important;
   font-family: Georgia, serif;
 }
 
@@ -377,7 +377,7 @@ a.dropdown-toggle {
 /*___ HEADER FONT ___*/
 
 #header .actions a:focus, #header .open a,  #header .dropdown .menu, #greeting .dropdown .menu,  #greeting .dropdown .menu a {
-  background: #0d0d0d !important;
+  background: #222 !important;
   color: #adadad !important;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   border-radius: 20px !important;
@@ -448,7 +448,7 @@ form.search input[type=text] {
   left: 1em;
   right: 1em;
   top: 4em;
-  background: #222 !important;
+  background: #0d0d0d !important;
   border: 2px solid;
   border-radius: 10px;
 }
@@ -542,7 +542,7 @@ form.search input[type=text] {
 #greeting .dropdown .menu li:hover {
   margin: 0 0.125em !important;
   border-radius:0 !important;
-  background: #0d0d0d !important
+  background: #222 !important
 }
 
 #greeting .menu {
@@ -565,7 +565,7 @@ form.search input[type=text] {
   box-shadow: none;
   border-radius: 0 0 20px 20px !important;
   border-top: none !important;
-  border: 2.5px dashed #0d0d0d;
+  border: 2.5px dashed #222;
   margin: 0 0.1em 1% 3% !important;
   padding: 15px 0;
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -587,14 +587,14 @@ form.search input[type=text] {
 }
 
 #dashboard a:hover {
-  background: #0d0d0d99 !important;
+  background: #2229 !important;
   border: 2px solid #adadad00 !important;
   color: #fff !important;
 }
 
 #dashboard span.current {
   background: #414141 !important;
-  border: 2px solid #0d0d0d00 !important;
+  border: 2px solid #2220 !important;
   color: #fff !important;
 }
 
@@ -605,8 +605,8 @@ span.current {
 }
 
 #outer .current {
-  /*background: #0d0d0d00 !important*/;
-  border-bottom: 2px solid #0d0d0d !important;
+  /*background: #2220 !important*/;
+  border-bottom: 2px solid #222 !important;
   border-radius:0 !important;
   line-height: 1.5 !important;
 }
@@ -672,7 +672,7 @@ fieldset fieldset, fieldset dl dl, form blockquote.userstuff {
 }
 
 body, .toggled form, .dynamic form, .secondary, .dropdown {
-    background: #0d0d0d !important;
+    background: #222 !important;
 }
 
 .secondary {
@@ -682,7 +682,7 @@ body, .toggled form, .dynamic form, .secondary, .dropdown {
 /*-------------- FILTER -------------*/
 
 select, select:focus {
-  background: #222;
+  background: #0d0d0d;
   color: #fff;
   font-family: monospace;
   font-weight: 600;
@@ -742,7 +742,7 @@ a.tag:hover, a.tag:visited:hover, a.tag:link:hover, span.action:hover, span.acti
 .warnings a:before, .relationships a:before, .characters a:before, .freeforms a:before {
   content: " ⬪ ";
   padding: 0;
-  background: #0d0d0d !important;
+  background: #222 !important;
 }
 
 .warnings a:before {
@@ -763,7 +763,7 @@ a.tag:hover, a.tag:visited:hover, a.tag:link:hover, span.action:hover, span.acti
 }
 
 .relationships a:before:hover, .characters a:before:hover, .freeforms a:before:hover {
-  color: #0d0d0d !important;
+  color: #222 !important;
 }
 
 
@@ -778,8 +778,8 @@ h4.viewed.heading {
   font-family: monospace !important;
   padding: 20px 15px 10px;
   border-radius: 15px !important;
-  border:0 solid #0d0d0d00 !important;
-  background: #0d0d0d !important;
+  border:0 solid #2220 !important;
+  background: #222 !important;
   text-align: center;
   color: #fff;
 }
@@ -855,12 +855,12 @@ a:active, a:focus, button:focus {
 
 .heading a.tag:visited:hover {
   color: #adadad !important;
-  background: #0d0d0d00 !important;
+  background: #2220 !important;
 }
 
 a.tag:visited:hover, a.tag:hover {
   color: #fff !important;
-  background: #0d0d0d00 !important;
+  background: #2220 !important;
   border-radius: 0;
 }
 
@@ -1040,10 +1040,10 @@ li.chapter.entire, li.chapter.next, li.chapter, li.mark, li#show_comments_link_t
   font-size: 0.95em !important;
   font-weight: 600;
   font-family: Georgia, serif !important;
-  background: #0d0d0d00 !important;
+  background: #2220 !important;
   cursor: pointer !important;
   border-radius:0 !important;
-  border-bottom: 2px solid #0d0d0d !important;
+  border-bottom: 2px solid #222 !important;
   margin-bottom: 10px !important;*/
 }
 
@@ -1052,14 +1052,14 @@ input[type="submit"], input[type="submit"]:focus {
   font-size: 0.95em !important;
   font-weight: 600;
   font-family: Georgia, serif !important;
-  background: #0d0d0d00 !important;
+  background: #2220 !important;
   border-radius: 50px !important;
-  border: 2px solid #0d0d0d !important;
+  border: 2px solid #222 !important;
 }
 
 input[type="submit"]:hover {
   border: 2px solid #adadad !important;
-  /*background: #0d0d0d00 !important;*/
+  /*background: #2220 !important;*/
   color: #fff !important;
 }
 
@@ -1073,7 +1073,7 @@ input[type="submit"]:hover {
 dl.meta, li.comment {
   padding: 20px !important;
   box-shadow: none !important;
-  background: #0d0d0d !important;
+  background: #222 !important;
   border-radius: 20px !important;
   border: 2.5px dashed #adadad !important;
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -1188,8 +1188,8 @@ div.preface .summary, div.preface .notes {
 }
 
 div.preface .notes {
-  background: #0d0d0d00;
-  border: 2.5px dashed #0d0d0d;
+  background: #2220;
+  border: 2.5px dashed #222;
 }
 
 div.preface .summary {
@@ -1227,7 +1227,7 @@ p.kudos {
 
 #main, body, dl.meta, #ibox_wrapper, #ibox_content {
   border-radius: 20px;
-  background: #2220;
+  background: #0d0d0d0;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
@@ -1261,14 +1261,14 @@ body, #main.error, #main.slow, #main.maintenance, .required .autocomplete, .auto
 
 .work.own, .listbox .index, .statistics .index li:nth-of-type(even), dl.meta, dl.index dd, textarea, input, option, .autocomplete .dropdown ul, .autocomplete .dropdown ul li, .autocomplete input {
   border-radius: 20px;
-  background-color: #0d0d0d;
+  background-color: #222;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
 .toggled form, .dynamic form {
   border: 2.5px solid #adadad;
   border-radius: 20px;
-  background: #0d0d0d !important;
+  background: #222 !important;
   box-shadow: none;
   padding: 20px;
   margin: 40px 3.5% 20px;
@@ -1337,7 +1337,7 @@ ol.index.group {
 
 .media-index .listbox {
   min-height: 17.5em;
-  background: #0d0d0d !important;
+  background: #222 !important;
   border: 3px dashed #adadad !important;
   border-radius: 20px !important;
   padding: 20px !important;
@@ -1378,7 +1378,7 @@ ul.meta.tags.commas a.tag:before, ul.meta.commas a:link:before {
 
 li.blurb, .listbox li.blurb {
   box-shadow: none !important;
-  background: #0d0d0d !important;
+  background: #222 !important;
   border-radius: 20px !important;
   border: 2.5px dashed #adadad !important;
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -1425,8 +1425,8 @@ p.type {
 .bookmark .user .userstuff {
   line-height: 1;
   border-radius: 10px;
-  border: 2px solid #0d0d0d !important;
-  background: #0d0d0d00;
+  border: 2px solid #222 !important;
+  background: #2220;
   color: #fff;
   margin: 20px0 20px 0 !important;
 }
@@ -1445,7 +1445,7 @@ p.type {
 }
 
 #ui-datepicker-div {
-  background: #0d0d0d !important;
+  background: #222 !important;
   border-radius: 20px !important;
   border: 2.5px dashed #adadad !important;
   display: none;
@@ -1461,7 +1461,7 @@ a.help.symbol.question.modal.modal-attached {
 
 thead, tfoot, tfoot td, th, tr:hover, col.name, input, textarea, #modal .content, .actions a, .action, .actions input, button, .current, .actions label, span.unread, .replied, .listbox, .fieldset fieldset.listbox, span.claimed, .system .latest h3, .system div.news h3, .picture .header, .bookmark .user {
   border-color: #000;
-  background: #222;
+  background: #0d0d0d;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   border-radius: 20px;
   /*margin-bottom: 10px;*/
@@ -1483,7 +1483,7 @@ textarea {
   padding: 20px !important;
   border-radius: 20px;
   border: 2.5px dashed #adadad;
-  background: #0d0d0d !important;
+  background: #222 !important;
 }
 
 .comment fieldset textarea {
@@ -1532,7 +1532,7 @@ textarea {
 
 .comment div.icon {
   margin: -30px 10px 10px 10px !important;
-  border-bottom:0 solid #222;
+  border-bottom:0 solid #0d0d0d;
 }
 
 .comment .icon .visitor {
@@ -1544,7 +1544,7 @@ textarea {
 }
 
 .comment h4.byline {
-  background: #222;
+  background: #0d0d0d;
   padding: 11px 10px 10px 90px;
   margin: 15px auto -0.25em;
 }
@@ -1651,7 +1651,7 @@ p.kudos, .required-tags .rating-general-audience, .required-tags .rating-explici
 }
 
 #symbols-key dl {
-  border:0 solid #222;
+  border:0 solid #0d0d0d;
 }
 
 #symbols-key dl dt img {
@@ -1751,13 +1751,13 @@ form dt {
 
 .autocomplete.dropdown {
   border-radius: 20px !important;
-  background: #0d0d0d !important;
+  background: #222 !important;
   border: 2px solid #fff !important;
 }
 
 .autocomplete div.dropdown ul {
-  background: #0d0d0d !important;
-  border: 1px solid #0d0d0d00 !important;
+  background: #222 !important;
+  border: 1px solid #2220 !important;
   padding: 5px !important;
   line-height: 1.286;
   color: #fff;
@@ -1775,8 +1775,8 @@ form dt {
   font-weight: 600;
   font-size: 1em;
   border-radius: 50px !important;
-  border: 2.5px solid #0d0d0d !important;  
-  background: #222;
+  border: 2.5px solid #222 !important;  
+  background: #0d0d0d;
 }
 
 .filters .submit input:hover {
@@ -1838,8 +1838,8 @@ label {
 }
 
 .filters fieldset {
-  background: #0d0d0d00;
-  border: 2.5px dashed #0d0d0d !important;
+  background: #2220;
+  border: 2.5px dashed #222 !important;
   border-radius: 20px !important;
   padding: 7% !important;
   margin: 0;
@@ -1848,7 +1848,7 @@ label {
 
 filters .submit input {
   color: #e0849b;
-  background: #0d0d0d;
+  background: #222;
   box-shadow: none;
 }
 
@@ -2014,7 +2014,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 
 #main .verbose legend {
   color: #adadad !important;
-  background: #0d0d0d00 !important;
+  background: #2220 !important;
   font-size: 1.3em !important;
   font-family: Georgia, serif !important;
   font-weight: 600;
@@ -2025,7 +2025,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 .verbose fieldset {
   border: 2.5px dashed #adadad;
   border-radius: 20px;
-  background: #0d0d0d;
+  background: #222;
   margin: 1em 0 !important;
 }
 
@@ -2062,7 +2062,7 @@ input:hover, input[type="text" i]:hover {
 
 input#pseud_byline_autocomplete {
 -webkit-box-shadow: 
-  0 00 1fffpx #0d0d0d00 inset !important;
+  0 00 1fffpx #2220 inset !important;
 }
 
 /*
@@ -2077,7 +2077,7 @@ li.input:hover, .autocomplete input:hover {
 
 fieldset#co-authors-options {
   border: none !important;
-  background: #222 !important;
+  background: #0d0d0d !important;
   border-radius: 10px !important;
 }
 
@@ -2141,7 +2141,7 @@ fieldset.create {
 }
 
 ul.options.index.group.many {
-  border: 2px solid #0d0d0d;
+  border: 2px solid #222;
 }
 
 input#skin_icon {
@@ -2162,7 +2162,7 @@ a.advanced_skin_open.action.hidden, a.advanced_skin_open.action.hidden:hover, a.
 div#modal {
   border:0 !important;
   padding: 15px;
-  background: #0d0d0d;
+  background: #222;
   border-radius: 20px;
 }
 
@@ -2226,7 +2226,7 @@ h2.heading a {
 
 .splash .favorite li:nth-of-type(odd) a, .splash .favorite li:nth-of-type(odd) a:visited {
   color: #fff !important;
-  background: #0d0d0d !important;
+  background: #222 !important;
   border-radius:0 !important;
 }
 
@@ -2237,7 +2237,7 @@ h2.heading a {
 }
 
 .splash .favorite li:nth-of-type(odd) a:hover, .splash .favorite li:nth-of-type(odd) a:visited:hover, .splash .favorite li:nth-of-type(odd) a:focus {
-  background: #0d0d0d;
+  background: #222;
   color: #adadadaa !important;
 }
 
@@ -2271,7 +2271,7 @@ p, li, dd, hr {
 }
 
 form .notice, ul.notes, .caution, span.html-notes {
-  background: #2220 !important;
+  background: #0d0d0d0 !important;
   color: #fff;
   border-color: #0000;
   padding: 0 20px;
