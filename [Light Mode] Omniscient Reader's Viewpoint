@@ -756,7 +756,7 @@ a.tag:hover, a.tag:visited:hover, a.tag:link:hover, span.action:hover, span.acti
 }
 
 .freeforms a:before {
-  color: #d3d1dc;
+  color: #d3cbc8;
 }
 
 .relationships a:before:hover, .characters a:before:hover, .freeforms a:before:hover {
@@ -822,7 +822,7 @@ h5.fandoms.heading {
 }
 
 .tags li.freeforms:nth-of-type(3n+1) a.tag, .tags li.freeforms:nth-of-type(3n+2) a.tag , .tags li.freeforms:nth-of-type(3n+3) a.tag {
-  background-color: #d3d1dc00 !important;
+  background-color: #d3cbc800 !important;
   padding: 0;
 }
 
@@ -872,7 +872,7 @@ a.tag:visited:hover, a.tag:hover {
 }
 
 .tags li.freeforms a.tag:hover {
-  background-color: #d3d1dc55 !important;
+  background-color: #d3cbc855 !important;
   border:0 !important;
 }
 
@@ -926,7 +926,7 @@ li.warnings + li.characters:before, li.relationships + li.characters:before {
 
 li.warnings + li.freeforms:before, li.relationships + li.freeforms:before, li.characters + li.freeforms:before {
   content: "\a Tropes ‧₊˚☾";
-  color: #d3d1dc;
+  color: #d3cbc8;
   white-space: pre-line;
 }
 
@@ -940,7 +940,7 @@ li.warnings + li.freeforms:before, li.relationships + li.freeforms:before, li.ch
 
 /*.blurb*/ ul.series:before {
     content: "✧" !important;
-    color: #d8cec5;
+    color: #c1b1a8;
     font-family: Avenir, Helvetica, Arial, sans-serif;
     font-weight: 600;
 }
@@ -1124,11 +1124,11 @@ dt.relationship.tags, dd.relationship.tags a.tag:before {
 }
 
 dt.character.tags, dd.character.tags a.tag:before {
-  color: #d3d1dc !important;
+  color: #d3cbc8 !important;
 }
 
 dt.freeform.tags, dd.freeform.tags a.tag:before {
-  color: #d8cec5 !important;
+  color: #c1b1a8 !important;
 }
 
 dd.rating.tags a.tag:before, dd.warning.tags a.tag:before, dd.category.tags a.tag:before, dd.fandom.tags a.tag:before, dd.relationship.tags a.tag:before, dd.character.tags a.tag:before, dd.freeform.tags a.tag:before, dd.AO3E.track-works-meta-notes a.tag:before {
@@ -1386,8 +1386,8 @@ li.blurb, .blurb .blurb {
 }
 
 .blurb blockquote {
-  background: #d8cec533;
-  border:0 solid #d8cec5;
+  background: #c1b1a833;
+  border:0 solid #c1b1a8;
   border-radius: 15px;
   font-size: 0.95em !important;
   padding: 15px;
@@ -1489,8 +1489,8 @@ textarea {
 }
 
 .comment fieldset textarea, .comment .userstuff {
-  background: #d3d1dc33;
-  border:0 solid #d3d1dc;
+  background: #d3cbc833;
+  border:0 solid #d3cbc8;
   border-radius: 15px !important;
   padding: 15px;
   margin: 20px 0 !important;
