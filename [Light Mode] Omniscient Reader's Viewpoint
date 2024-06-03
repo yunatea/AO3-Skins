@@ -248,7 +248,7 @@ a:visited:hover, a.link:visited:hover {
 #header .logo {
   width: 0;
   height: 0;  
-  background: url(https://imgur.com/a/hW3hidM) no-repeat;
+  background: url(https://i.imgur.com/PUl9V4b.png) no-repeat;
   padding: 24% 67%;
   background-size: contain;
 }
